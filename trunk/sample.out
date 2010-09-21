@@ -1,0 +1,55 @@
+\BOOKMARK [1][-]{section*.4}{Introduction}{}
+\BOOKMARK [1][-]{section*.5}{Related Work}{}
+\BOOKMARK [1][-]{section*.6}{Scenarios}{}
+\BOOKMARK [2][-]{section*.7}{Stationary and visually focused}{section*.6}
+\BOOKMARK [2][-]{section*.8}{Mobile and visually focused}{section*.6}
+\BOOKMARK [2][-]{section*.9}{Mobile and intermittently focused}{section*.6}
+\BOOKMARK [1][-]{section*.10}{System}{}
+\BOOKMARK [2][-]{section*.11}{Hardware implementation}{section*.10}
+\BOOKMARK [2][-]{section*.12}{Software architecture}{section*.10}
+\BOOKMARK [3][-]{section*.13}{Eventlogger}{section*.12}
+\BOOKMARK [3][-]{section*.14}{GUI}{section*.12}
+\BOOKMARK [1][-]{section*.15}{Experiment}{}
+\BOOKMARK [2][-]{section*.16}{Participants}{section*.15}
+\BOOKMARK [2][-]{section*.17}{Phase 1: Usability test}{section*.15}
+\BOOKMARK [2][-]{section*.18}{Phase 2: Scientific experiment}{section*.15}
+\BOOKMARK [3][-]{section*.19}{Conditions}{section*.18}
+\BOOKMARK [3][-]{section*.20}{Data collection methods}{section*.18}
+\BOOKMARK [3][-]{section*.21}{Measures}{section*.18}
+\BOOKMARK [3][-]{section*.22}{Process}{section*.18}
+\BOOKMARK [1][-]{section*.23}{Mechanisms}{}
+\BOOKMARK [2][-]{section*.24}{QWERTY}{section*.23}
+\BOOKMARK [2][-]{section*.25}{Backside QWERTY}{section*.23}
+\BOOKMARK [3][-]{section*.26}{Description}{section*.25}
+\BOOKMARK [3][-]{section*.27}{Design evolution}{section*.25}
+\BOOKMARK [2][-]{section*.28}{Chording mechanism}{section*.23}
+\BOOKMARK [3][-]{section*.29}{Description}{section*.28}
+\BOOKMARK [3][-]{section*.30}{Design Evolution}{section*.28}
+\BOOKMARK [1][-]{section*.31}{Results}{}
+\BOOKMARK [2][-]{section*.32}{Quantitative results}{section*.31}
+\BOOKMARK [3][-]{section*.33}{Keystrokes Per Character \(KSPC\)}{section*.32}
+\BOOKMARK [3][-]{section*.34}{Words Per Minute \(WPM\)}{section*.32}
+\BOOKMARK [3][-]{section*.35}{Speed versus Accuracy Trade-off}{section*.32}
+\BOOKMARK [3][-]{section*.36}{Sample tests}{section*.32}
+\BOOKMARK [2][-]{section*.37}{Qualitative results}{section*.31}
+\BOOKMARK [3][-]{section*.38}{Mental Demand}{section*.37}
+\BOOKMARK [3][-]{section*.39}{Physical Demand}{section*.37}
+\BOOKMARK [3][-]{section*.40}{Temporal Demand}{section*.37}
+\BOOKMARK [3][-]{section*.41}{Performance}{section*.37}
+\BOOKMARK [3][-]{section*.42}{Effort}{section*.37}
+\BOOKMARK [3][-]{section*.43}{Frustration}{section*.37}
+\BOOKMARK [3][-]{section*.44}{Mean Weighted Scores}{section*.37}
+\BOOKMARK [2][-]{section*.45}{Design guidelines}{section*.31}
+\BOOKMARK [3][-]{section*.46}{Movement minimization}{section*.45}
+\BOOKMARK [3][-]{section*.47}{Multiple finger sizes}{section*.45}
+\BOOKMARK [3][-]{section*.48}{Reducing dimensions of movement}{section*.45}
+\BOOKMARK [3][-]{section*.49}{Visual search vs Recall}{section*.45}
+\BOOKMARK [3][-]{section*.50}{Pressure vs Touch}{section*.45}
+\BOOKMARK [3][-]{section*.51}{Touch Cursors}{section*.45}
+\BOOKMARK [1][-]{section*.52}{Future Work}{}
+\BOOKMARK [2][-]{section*.53}{Haptic Feedback}{section*.52}
+\BOOKMARK [2][-]{section*.54}{Proximity Sensing}{section*.52}
+\BOOKMARK [2][-]{section*.55}{Longitudinal deployments}{section*.52}
+\BOOKMARK [2][-]{section*.56}{Modified Chording}{section*.52}
+\BOOKMARK [2][-]{section*.57}{Testing in valid scenarios}{section*.52}
+\BOOKMARK [1][-]{section*.58}{REFERENCES }{}
