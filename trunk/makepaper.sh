@@ -1,5 +1,5 @@
 #! /bin/bash
-pdflatex sample
-bibtex sample
-pdflatex sample
-pdflatex sample
+xelatex chi_backside_2010
+bibtex chi_backside_2010
+xelatex chi_backside_2010
+xelatex chi_backside_2010
