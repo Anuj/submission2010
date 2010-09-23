@@ -9,7 +9,8 @@ measures that we have proposed earlier in the paper.
 KSPC is generally treated as a measure of accuracy, because it
 represents the number of keystrokes executed per character. From our
 experiment, it turned out that all the three mechanisms were similar
-in terms of KSPC measurements as shown in Table 2.
+in terms of KSPC measurements as shown in
+Table~\ref{tab:KSPCStatisticsForTextCorpora}.
 
 \begin{table*}
 \begin{minipage}[b]{0.5\linewidth}
@@ -21,7 +22,7 @@ in terms of KSPC measurements as shown in Table 2.
 			 Bksd. QWERTY & 1.338 & 1.497 & 1.278 \\ \hline
 		\end{tabular}
 	\caption{KSPC Statistics}
-	\label{tab:StatisticsForTextCorpora}
+	\label{tab:KSPCStatisticsForTextCorpora}
 \end{minipage}	
 \begin{minipage}[b]{0.5\linewidth}
 	\centering
@@ -32,7 +33,7 @@ in terms of KSPC measurements as shown in Table 2.
 			 Bksd. QWERTY & 8.598 & 10.055 & 5.432 \\ \hline
 		\end{tabular}
 	\caption{WPM Statistics}
-	\label{tab:StatisticsForTextCorpora}
+	\label{tab:WPMStatisticsForTextCorpora}
 \end{minipage}
 \end{table*}
 
@@ -81,7 +82,8 @@ measurements. Therefore, one of the researchers who was involved in
 development of the interface and had reasonable exposure to the
 interface went through the test in exactly the same fashion as the
 participants. This was done to test the capability of the two new
-mechanisms in terms of speed and accuracy. Table 4 shows the
+mechanisms in terms of speed and
+accuracy. Table~\ref{tab:StatisticsForTestCorpora} shows the
 measurements from the same.
 
 \begin{table*}
@@ -92,7 +94,7 @@ measurements from the same.
 			 Backside QWERTY & 13.231 & 1.152 \\ \hline
 		\end{tabular}
 	\caption{Sample Measurements}
-	\label{tab:StatisticsForTextCorpora}
+	\label{tab:StatisticsForTestCorpora}
 \end{table*}
 
 It can be seen from the table that with decent amount of exposure to
@@ -113,28 +115,9 @@ to soft-QWERTY keyboards, this factor was uniform through the
 experiment. In the following few paragraphs we summarize the
 high-level trends that were derived from the ratings that the
 participants assigned to the backside QWERTY and chording
-mechanisms. Table [5] and [6] present the ratings given by the users
-to the two mechanisms.
+mechanisms. Figure~\ref{fig:tlx-ratings} presents the ratings given by
+the users of all three mechanisms.
 
-\begin{table*}
-	\centering
-		\begin{tabular}{|l|c|c|c|c|c|c|c|} \hline
-		                         & Mental Demand & Physical Demand & Temporal Demand & Performance & Effort & Frustration & Mean Weighted Score \\ \hline
-			 User 1 & 15 & 70 & 15 & 15 & 30 & 25 & 29\\ \hline
-			 User 2 & 15 & 40 & 20 & 20 & 30 & 24 & 24\\ \hline
-			 User 3 & 20 & 75 & 25 & 25 & 30 & 10 & 32\\ \hline
-			 User 4 & 25 & 65 & 25 & 10 & 35 & 25 & 33\\ \hline
-			 User 5 & 20 & 60 & 35 & 35 & 45 & 35 & 37\\ \hline
-			 User 6 & 25 & 30 & 30 & 20 & 30 & 40 & 29\\ \hline
-			 User 7 & 15 & 75 & 30 & 55 & 65 & 15 & 39\\ \hline
-			 User 8 & 45 & 35 & 40 & 30 & 40 & 35 & 39\\ \hline
-			 User 9 & 55 & 80 & 20 & 75 & 50 & 75 & 56\\ \hline
-			 User 10 & 60 & 40 & 35 & 25 & 40 & 85 & 49\\ \hline  
-			 Avg. Scores & 29.5 & 57 & 27.5 & 31 & 38.5 & 37.5 & 37\\ \hline
-		\end{tabular}
-	\caption{NASA-TLX rating for backside-QWERTY mechanism}
-	\label{tab:StatisticsForTextCorpora}
-\end{table*}	
 \subsubsection{Mental Demand}
 
 By just looking at the ratings on the mental demand of the task on the
@@ -204,36 +187,25 @@ videos from those sessions, and they corroborated the same claim.
 
 The difference between the sets of ratings for backside-QWERTY and
 chording was not significant. The t-test results in a p-value of
-0.52. However, studying the kernel density plots [Figure] more
-carefully suggested that the distribution of the opinion on the amount
-of effort involved in working with the backside-QWERTY was
-bimodal. However, for the chording it was almost evenly distributed
-around the average rating. The videos suggested that some of such
-cases were because the backside-QWERTY did not allow for change in
-size of the keyboard, people who had fingers longer or shorter than
-average finger sizes had a harder time with the mechanism as opposed
-to other. The chording mechanism on the other hand, did allow for such
-changes and therefore got an even distribution of ratings.
+0.52. However, studying the kernel density plots (see
+Figure~\ref{fig:tlx-ratings} more carefully suggested that the
+distribution of the opinion on the amount of effort involved in
+working with the backside-QWERTY was bimodal. However, for the
+chording it was almost evenly distributed around the average
+rating. The videos suggested that some of such cases were because the
+backside-QWERTY did not allow for change in size of the keyboard,
+people who had fingers longer or shorter than average finger sizes had
+a harder time with the mechanism as opposed to other. The chording
+mechanism on the other hand, did allow for such changes and therefore
+got an even distribution of ratings.
 
-\begin{table*}
-	\centering
-		\begin{tabular}{|l|c|c|c|c|c|c|c|} \hline
-		                         & Mental Demand & Physical Demand & Temporal Demand & Performance & Effort & Frustration & Mean Weighted Score \\ \hline
-			 User 1 & 20 & 20 & 15 & 20 & 30 & 15 & 20\\ \hline
-			 User 2 & 25 & 35 & 25 & 25 & 25 & 20 & 26\\ \hline
-			 User 3 & 25 & 55 & 35 & 30 & 45 & 40 & 38\\ \hline
-			 User 4 & 30 & 60 & 40 & 35 & 55 & 45 & 44\\ \hline
-			 User 5 & 35 & 70 & 30 & 10 & 50 & 35 & 41\\ \hline
-			 User 6 & 15 & 75 & 10 & 70 & 35 & 30 & 34\\ \hline
-			 User 7 & 65 & 80 & 30 & 75 & 40 & 25 & 53\\ \hline
-			 User 8 & 70 & 85 & 45 & 15 & 45 & 40 & 57\\ \hline
-			 User 9 & 80 & 60 & 25 & 30 & 45 & 40 & 52\\ \hline
-			 User 10 & 65 & 40 & 20 & 55 & 35 & 35 & 42\\ \hline  
-			 Avg. Scores & 43 & 58 & 27.5 & 36.5 & 40.5 & 32.5 & 41\\ \hline
-		\end{tabular}
-	\caption{NASA-TLX rating for chording mechanism}
-	\label{tab:StatisticsForTextCorpora}
-\end{table*}
+\begin{figure*}
+    \includegraphics[width=\textwidth]{Figures/hash_and_densities_index.pdf} 
+    \caption{NASA-TLX rating for all three input mechanisms}
+    \label{fig:tlx-ratings}
+\end{figure*}
+
+
 \subsubsection{Frustration}
 
 The ratings suggested that on an average users were satisfied with the
