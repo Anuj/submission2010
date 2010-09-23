@@ -125,3 +125,48 @@ def scatter_grid(a, labels=None, mode="upper"):
 def full_scatter_grid(a,b,labels):
     scatter_grid(a, labels, mode='upper')
     scatter_grid(b, None, mode='lower')
+
+def hash_and_density_plot(a, fig):
+    x=0
+    xwidth = 100./(len(a)+2)
+
+    for i in xrange(0,len(a)):
+        
+        k = gaussian_kde(a[i])
+        points = arange(-100,300)
+        estimate = k.evaluate(points)
+        estimate /= sum(estimate)
+        estimate = estimate[100:200]
+        estimate = estimate * 1000/(len(a)+1)+ x + xwidth/2
+
+        plot(estimate+.5, points[100:200], color=(.6,.6,.6), linewidth=2)
+
+
+        bounds = x,x+xwidth/2
+        axvspan(x,x+xwidth/2,0,1, facecolor=(.95,.95,.95), edgecolor=(.95,.95,.95), zorder=-100)
+        for p in a[i]:
+            axhline(p, xmin=bounds[0]/100, xmax=bounds[1]/100, color='k', linewidth=2)
+
+        
+        #if not labels is None:
+            #for i in xrange(len(a)):
+                #sp = subplot(1, len(a),i+1)
+                #xlabel(labels[i], color=(0.6,0.6,0.6), zorder=2)
+    
+        x+= 100./(len(a)+1)
+
+    axis([0,100,0,100])
+
+    fig.get_axes().set_axis_off()
+
+def hash_and_density_plots(data_sets):
+    
+    category_count = data_sets[0].shape[1]
+    
+    for i in xrange(category_count):
+        sp = subplot(1,category_count,i+1)
+        
+        attribute_data = [data_set[:,i] for data_set in data_sets]
+        hash_and_density_plot(attribute_data, sp)
+
+    subplots_adjust(wspace=0.)
