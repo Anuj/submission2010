@@ -170,3 +170,12 @@ def hash_and_density_plots(data_sets):
         hash_and_density_plot(attribute_data, sp)
 
     subplots_adjust(wspace=0.)
+
+def kspc_vs_wpm(k,w):
+    scatter(k[:,0], w[:,0], marker=(5,2,0), color=(0.7,0.7,0.7), s=40)
+    scatter(k[:,1], w[:,1], marker='^', color=(0.7,0.7,0.7), s=40)
+    scatter(k[:,2], w[:,2], marker='s', color=(0.7,0.7,0.7), s=40)
+    scatter(mean(k[:,0]), mean(w[:,0]), marker=(5,2,0), color='k', s=160)
+    scatter(mean(k[:,1]), mean(w[:,1]), marker='^', color='k', s=160)
+    scatter(mean(k[:,2]), mean(w[:,2]), marker='s', color='k', s=160)
+    axis((1.,1.6,0,16))
