@@ -67,9 +67,10 @@ and Enter keys was increased so that they are easy to select.
 
 \begin{figure*}
     \includegraphics[width=\textwidth]{Figures/chording_explaination.pdf} 
-    \caption{Entering a character using the chording mechansims.  Note
-      that all three steps can be performed simultaneously, for
+    \caption{Enter the character ``l'' using the chording mechansims.
+      Note that all three steps can be performed simultaneously, for
       proficient users.}
+    \label{fig:chording_explaination}
 \end{figure*} 
 
 The lack of tactile feedback has often been cited as the primary
@@ -93,18 +94,20 @@ lower-case or symbols.  Within these classes, the number of fingers
 touching the region determines one of three subgroups in the class,
 with nine characters in each subgroup.  The nine characters are broken
 up into three groups, and an individual character is selected using
-the same mechanism on the right hand.
+the same mechanism on the right hand
+(Figure~\ref{fig:chording_explaination}).
 
-In our implementation, the number of fingers activating a region was
+In our implementation, the number of fingers activating a region is
 indicated by color changes to the activated regions, in addition to
 the translucent circles representing the location of the fingers.
-They can uses these circles to position their fingers in the correct
-locations.  The user then touches anywhere on the front screen to
+The user can use these circles to position their fingers in the correct
+locations.  They then touche anywhere on the front screen to
 indicate a character input.  When the user is learning how to use the
 chording mechanism, they can enter a character using the step-by-step
 process described above.  As they become more familiar, however, then
 can enter chords by touching the device with both hands, in the
-correct location, simultaneously.
+correct location, simultaneously
+.
 Similar to backside QWERTY and QWERTY, the top quarter of the screen
 was a scrollable textfield, which displayed the text that was being
 entered.
