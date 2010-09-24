@@ -6,12 +6,12 @@ history. Their portability and communication capabilities have
 revolutionized how people interact with each other. Despite the rapid
 growth of mobile phones, text entry on mobile devices remains a major
 challenge. However, with the recent rise in sales in the
-smartphone/PDA market and the recent launch of products like iPad,
-users have greater access to medium sized touch screens. These screens
-should offer more screen space than a traditional phone, and can
-arguably be more effective in text-input tasks. However, due to
-increased size and weight, these devices require specific postures
-from the users to be able to input text.
+smartphone/PDA market and the recent launch of serveral tablet
+form-factor devices, users have greater access to medium sized touch
+screens. These screens offer more screen space than a traditional
+phone, and can arguably be more effective in text-input
+tasks. However, due to increased size and weight, these devices
+require specific postures from the users to be able to input text.
 
 Moreover, the tablet form-factor introduces two problems for the user.
 First, since a tablet is very portable, it is an ideal device for use
@@ -25,6 +25,7 @@ device.
 \begin{figure}
     \includegraphics[scale=0.35]{Figures/device_hold.pdf} 
   	\caption{A user holding a foot-scale device and trying to enter text. It can be seen how this is unstable and unnatural.}
+    \label{fig:device_hold}
 \end{figure}
 
 Unlike a mobile phone, however, a larger (e.g. 7+ inches wide)
@@ -33,9 +34,9 @@ because of the relatively large distance that the thumbs must travel
 to reach the appropriate keys, and the weight of the device compounds
 the problem of typing by straining the hands to support the device
 while making precise movements to position the thumbs over the proper
-keys. (drawing) While standing, many users resort to a different pose,
-in which one arm supports the device while the other hand types with a
-single finger.
+keys. While standing, many users resort to a different pose, in which
+one arm supports the device while the other hand types with a single
+finger (Figure~\ref{fig:device_hold}).
 
 A second difficulty, common to all soft keyboards, arises because the
 fingers do not receive any tactile feedback as to their position on
@@ -51,21 +52,28 @@ but this provides only limited improvement.
 Recently, there has been a push in the industry for devices with
 backside input. Notion ink's Adam PC has a backside trackpad
 \cite{1}. Samsung and Toshiba have also been making effort towards
-backside touch input. With the growing interest in
-backside touch input, comes the potential of using the same for
+backside touch input. With the growing interest in backside touch
+input, comes the potential for using the same for entering and
 manipulating information. A "natural" method of holding such a device
 is to have hands on both the sides with fingers wrapped around on the
-back [Figure 2]. The advantage of having a backside touch input is that
-users can possibly use the fingers on the back to input text and
-manipulate information.
+back (Figure~\ref{fig:natural}. 
+
 \begin{figure}
     \includegraphics[scale=0.43]{Figures/natural1.pdf} 
      \includegraphics[scale=0.43]{Figures/natural2.pdf} 
-  	\caption{A user holding a mobile device with medium-sized touch screen in a natural and stable posture. The user is able to see his finger positions on the screen on the front. The figure also shows our hardware prototype with a multitouch screen on the rear of a Slate PC.}
+     \caption{A user holding a mobile device with medium-sized touch
+       screen in a natural and stable posture. The user is able to see
+       his finger positions on the screen on the front. The figure
+       also shows our hardware prototype with a multitouch screen on
+       the rear of a Slate PC.}
+        \label{fig:natural}
 \end{figure}
-In this paper we present novel methods that investigate the use of a
-backside touch input device for text input on a mobile device with a medium-sized
-touch screen. We implement two mechanisms, one of them being a backside
-QWERTY keyboard, the other one being a chording mechanism. We compare
-and contrast the performance of these novel mechanisms with a standard
-soft QWERTY keyboard.
+
+In this paper we investigate the use of a backside touch input device
+for text input on a mobile device with a medium-sized touch
+screen. Using a hardware prototype with a multitouch input on both the
+back and the front of the device, we explore two new mechanisms: a
+backside QWERTY keyboard, and a chording mechanism.  We study the
+performance of these novel mechanisms with a standard soft QWERTY
+keyboard by examining the quantitative and qualitative results of a
+controlled, 36 user study, plus some auxiliary investigation.
