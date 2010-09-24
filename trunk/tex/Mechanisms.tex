@@ -23,7 +23,7 @@ screen at a location that is vertically above the touch point. This
 way users could move around multiple cursors at the same time, using
 multiple fingers. To input a particular character, the user was
 required to go select a particular key with the cursor and then touch
-the front screen anywhere to signal input.
+the front screen anywhere to signal input. Figure 3 shows a user trying to reach out for some characters on the backside-QWERTY mechanism.
 
 \begin{figure}
     \includegraphics[scale=0.45]{Figures/backside.pdf} 
@@ -55,7 +55,7 @@ As a result we finally shifted to touching the front panel once the
 character has been selected, as the method to signal input.
 
 In the first version we had also modified the keyboard layout to match
-the finger to key mappings on a QWERTY keyboard [Figure]. However,
+the finger to key mappings on a QWERTY keyboard. However,
 after the usability test, we realized that users were still doing
 visual search for keys instead of using their pre-existing knowledge
 of QWERTY. Therefore, a QWERTY layout in this case turned out to be
@@ -86,7 +86,7 @@ particular character that was over a segment, the user was supposed to
 select the segment (as explained above) and touch anywhere on the
 front screen. Therefore, each character corresponded to a unique
 "chord" on each side of the screen, and therefore the mechanism was
-called the chording mechanism.
+called the chording mechanism. .  For example, in Figure 4 the user is selecting the character “l” by placing two fingers in the central region on the left hand to select the character set “jklmnopqr”, and three fingers in the right-hand region on the right hand to select “l”.  Moreover, in our implementation, the number of fingers activating a region was indicated by color changes to the activated  regions, in addition to the translucent circles representing the location of the fingers. 
 
 The use of number of fingers, as opposed to position to select a
 segment was done deliberately to restrict the movement in one
