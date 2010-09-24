@@ -10,32 +10,13 @@ KSPC is generally treated as a measure of accuracy, because it
 represents the number of keystrokes executed per character. From our
 experiment, it turned out that all the three mechanisms were similar
 in terms of KSPC measurements as shown in
-Table~\ref{tab:KSPCStatisticsForTextCorpora}.
+Figure~\ref{fig:kspc_and_wpm}.
 
-\begin{table*}
-\begin{minipage}[b]{0.5\linewidth}
-	\centering
-		\begin{tabular}{|l|c|c|c|} \hline
-		                         & Avg. KSPC & Max. KSPC & Min. KSPC \\ \hline
-			 QWERTY & 1.288 & 1.325 & 1.239 \\ \hline
-			 Chording & 1.261 & 1.373 & 1.110 \\ \hline
-			 Bksd. QWERTY & 1.338 & 1.497 & 1.278 \\ \hline
-		\end{tabular}
-	\caption{KSPC Statistics}
-	\label{tab:KSPCStatisticsForTextCorpora}
-\end{minipage}	
-\begin{minipage}[b]{0.5\linewidth}
-	\centering
-		\begin{tabular}{|l|c|c|c|} \hline
-		                         & Avg. WPM & Max. WPM & Min. WPM \\ \hline
-			 QWERTY & 12.162 & 15.233 & 10.2 \\ \hline
-			 Chording & 4.061 & 4.79 & 2.722 \\ \hline
-			 Bksd. QWERTY & 8.598 & 10.055 & 5.432 \\ \hline
-		\end{tabular}
-	\caption{WPM Statistics}
-	\label{tab:WPMStatisticsForTextCorpora}
-\end{minipage}
-\end{table*}
+\begin{figure}
+    \includegraphics[width=0.5\textwidth]{Figures/kspc_and_wpm.pdf} 
+    \caption{Keystrokes-per-character (KSPC) and words-per-minute (WPM) for each mechanism, with means noted.}
+    \label{fig:kspc_and_wpm}
+\end{figure}
 
 The Chording mechanism was on an average faster than the other two
 mechanisms, with the Backside QWERTY being the slowest in terms of
@@ -54,13 +35,14 @@ Words Per Minute (WPM) is a measure that is commonly used to represent
 the speed of a text input mechanism. Our experiment findings suggested
 that QWERTY was still the fastest mechanism, followed by backside
 QWERTY and the slowest was chording. Statistics on WPM measurements
-can be found in Table 3.  The results suggested that QWERTY was faster
-than both backside QWERTY and chording mechanisms. However, it should
-be noted that the test sessions were generally around 20-30 minutes,
-and each user only interacted with a mechanism once. Therefore, the
-fact that backside QWERTY was on a average 3/4th as fast as the QWERTY
-mechanism was encouraging. This led us to explore the results
-qualitatively and also in terms of speed versus accuracy trade-off.
+can be found in Figure~~\ref{fig:kspc_and_wpm}.  The results suggested
+that QWERTY was faster than both backside QWERTY and chording
+mechanisms. However, it should be noted that the test sessions were
+generally around 20-30 minutes, and each user only interacted with a
+mechanism once. Therefore, the fact that backside QWERTY was on a
+average 3/4th as fast as the QWERTY mechanism was encouraging. This
+led us to explore the results qualitatively and also in terms of speed
+versus accuracy trade-off.
 
 \subsubsection{Speed versus Accuracy Trade-off}
 
