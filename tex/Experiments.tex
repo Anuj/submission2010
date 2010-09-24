@@ -1,4 +1,7 @@
 \section{Experiment}
+
+We designed three different mechanisms called frontside QWERTY (or QWERTY/soft-QWERTY), backside QWERTY and chording mechanism, as the solutions to the "stationary and visually focused", "mobile and visually focused" and "mobile and intermittently focused" scenarios respectively. The details of the mechanisms will be described in the next section. In this sections we describe the environment in which the mechanisms were incrementally developed and also the process that was employed. It is important to understand the structure of the study, before we try to explain the incremental changes in the design of the mechanisms.
+
 \subsection{Participants}
 
 For the purpose of the study we tried to keep the backgrounds of the
@@ -61,7 +64,7 @@ a total of 36 participants. Each condition had 12 participants. The
 three conditions were:
 
 \begin{itemize}
-	\item QWERTY
+	\item frontside QWERTY (or QWERTY)
 	\item Backside QWERTY
 	\item Chording Mechanism
 \end{itemize}
@@ -89,6 +92,8 @@ collection methods:
 	\item What would you change in the interface?
 \end{enumerate}
 
+This was done to get feedback on the mechanisms and the results from these interviews are reflected in the future work section of the paper. 
+
 \item NASA task load index: To be able to quantitatively capture the
   experience with the interfaces, the NASA task load index was
   used. The NASA Task Load Index (NASA-TLX) is a subjective,
@@ -98,11 +103,10 @@ collection methods:
   the Human Performance Group at NASA's Ames Research Center over a
   three year development cycle that included more than 40 laboratory
   simulations [Reference] [Reference]. It has been cited in over 550
-  studies[Reference] and a recent search for NASA-TLX on Google
-  Scholar revealed over 3,660 articles. These statistics highlight the
+  studies[Reference]. These statistics highlight the
   large influence the NASA-TLX has had in Human Factors
   research. Therefore, we chose it as a tool in our experiment to
-  capture the user experience.
+  capture the user experience. It should be noted that the NASA TLX scale has 20 divisions, each division corresponding to 5 task load points (making it a 100 point scale). Researchers tend to use both the scales, depending on the level of granularity needed. For clarity purposes, we will always state the scale we are using while making an argument henceforth. 
 
 \end{itemize}
 \subsubsection{Measures}
@@ -121,16 +125,15 @@ the scenarios that we had earlier listed. However, the lack of prior
 research on the topic, suggested that the first few research cycles
 should be conducted under controlled conditions. This eliminated the
 possibility of the environment acting as a confounding variable in the
-experiment.
+experiment. The process followed was:
 
 \begin{enumerate}
 \item Participants were briefed about the goal of the session. They
   were also briefed about the structure of the session.
 \item They were given a brief introduction to the input
   mechanism. This was done by one of the researchers.
-\item They were given a the test corpus and asked to spend the next 20
-  mins familiarizing themselves with the input mechanism. The text
-  they were supposed was the test corpus.
+\item They were given the experiment corpus [Table 1] and asked to spend the next 20
+  mins familiarizing themselves with the input mechanism.
 \item The entire process was videotaped for data analysis and
   validation purposes.
 \item After 20 minutes, they were handed over the experiment
@@ -142,12 +145,7 @@ experiment.
   errors, they were handed the NASA TLX questionaire and asked to rate
   their experience. Since the index is relative they were asked to
   compare their experience with their previous exposure to a soft
-  QWERTY keyboard. This was also done for the QWERTY mechanism, just
-  to make sure that the mechanism is a fair representation of the
-  soft-QWERTY family. Since the NASA-TLX is a 20 point scale, we asked
-  them to assume that QWERTY was at 10 on each scale. This was done so
-  that the individual ratings could be studied in details during
-  qualitative analysis.
+  QWERTY keyboard. 
 \item Finally, they were interviewed on any other qualitative feedback
   they had on how to make the mechanisms better.
 \end{enumerate}
