@@ -43,25 +43,6 @@ average 3/4th as fast as the QWERTY mechanism was encouraging. This
 led us to explore the results qualitatively and also in terms of speed
 versus accuracy trade-off.
 
-\subsubsection{Speed versus Accuracy Trade-off}
-
-\begin{figure}
-    \includegraphics[width=0.5\textwidth]{Figures/kspc_vs_wpm.pdf} 
-    \caption{Keystrokes-per-character (KSPC) vs. words-per-minute
-      (WPM) for each mechanism.  The large symbols are the mean values
-      for each individual mechanism. }
-    \label{fig:kspc_vs_wpm}
-\end{figure}
-
-In spite of the discussions above, we should acknowledge that none of
-these measures can be studied totally independently, and there was a
-possibility that the participants were being more accurate by
-sacrificing on speed. However, since speed with a particular input
-mechanism is often attributed to the amount of exposure and practice,
-we had reasons to believe that the comparison of accuracies was still
-fair. However, we still did some Speed vs Accuracy analysis for the
-three mechanisms and Figure~\ref{fig:kspc_vs_wpm} is a plot of the
-same. It becomes clear from the graph that chording does the best on the accuracy axis and QWERTY does the best on the speed axis. However, backside-QWERTY, in terms of the speed vs accuracy tradeoff seems to have the highest potential to come close to QWERTY.
 
 \subsubsection{Sample tests}
 
@@ -92,6 +73,52 @@ the interface, both the accuracy and the speed seem to show better
 trends. However, these measurements are restricted to an individual
 and are highly preliminary. To fully establish our claims, larger and
 longer studies would have to be conducted.
+
+\subsubsection{Speed versus Accuracy Trade-off}
+
+\begin{figure}
+    \includegraphics[width=0.5\textwidth]{Figures/kspc_vs_wpm.pdf} 
+    \caption{Keystrokes-per-character (KSPC) vs. words-per-minute
+      (WPM) for each mechanism.  The large symbols are the mean values
+      for each individual mechanism. }
+    \label{fig:kspc_vs_wpm}
+\end{figure}
+
+In spite of the discussions above, we should acknowledge that none of
+these measures can be studied totally independently, and there was a
+possibility that the participants were being more accurate by
+sacrificing on speed. However, since speed with a particular input
+mechanism is often attributed to the amount of exposure and practice,
+we had reasons to believe that the comparison of accuracies was still
+fair. 
+
+Examining the speed versus accuracy plot for each mechanism suggests
+that users reach a limit at which they cannot input data any faster,
+despite a sacrifice in accuracy (Figure~\ref{fig:kspc_vs_wpm}).  No
+user could break the 10wpm barrier with the Backside QWERTY mechansim,
+despite attempts over a wide range of accuracies.  Similarly for the
+Chording mechanism.
+
+Interestingly, there is a cluster of users who were able to achieve
+very high accuracy with the chording mechanism.  This was one of the
+primary design goals for the Chording mechanism: to enable reduce the
+dependency on precise physical positioning for accurate input.
+
+We hypothesize that the ``speed-limit'' that users reach for the two
+novel mechanisms is partly due to the lack of kinestetic memory
+(e.g. muscle memory) about how to operate the keyboard.  If this is
+the case, then concerted practice should result in faster performance.
+Indeed, the results in Table~\ref{tab:StatisticsForTestCorpora} show
+just that for at least one user.  Since one user was able to break the
+``speed-limit'' with extra practice, we suspect that the years of
+extra practice with the QWERTY mechanism is the primary source of the
+advantage that QWERTY enjoys. \todo{add the results from
+  Table~\ref{tab:StatisticsForTestCorpora} to the plot, and check out
+  the qualitative results from the three users who got high accuracy}.
+
+The high accuracy rates of the Chording mechanism are therefore quite
+promising.  In the future, we will need to explicitly examine the
+impact of training time on speed and accuracy.
 
 \subsection{Qualitative results}
 
