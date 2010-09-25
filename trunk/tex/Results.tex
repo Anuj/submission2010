@@ -6,17 +6,17 @@ measures that we have proposed earlier in the paper.
 
 \subsubsection{Keystrokes Per Character (KSPC)}
 
-KSPC is generally treated as a measure of accuracy, because it
-represents the number of keystrokes executed per character. From our
-experiment, it turned out that all the three mechanisms were similar
-in terms of KSPC measurements as shown in
-Figure~\ref{fig:kspc_and_wpm}.
-
 \begin{figure}
     \includegraphics[width=0.5\textwidth]{Figures/kspc_and_wpm.pdf} 
     \caption{Keystrokes-per-character (KSPC) and words-per-minute (WPM) for each mechanism, with means noted. The continous curves represent kernel densities of the population across ranges, 1.0-1.6 for KSPC and 0-16 for WPM. The tiny horizontal bars are scatter plots of individual measurements across the same ranges.}
     \label{fig:kspc_and_wpm}
 \end{figure}
+
+KSPC is generally treated as a measure of accuracy, because it
+represents the number of keystrokes executed per character. From our
+experiment, it turned out that all the three mechanisms were similar
+in terms of KSPC measurements as shown in
+Figure~\ref{fig:kspc_and_wpm}.
 
 The Chording mechanism was on an average more accurate than the other two
 mechanisms, with the Backside QWERTY being the lowest in terms of
@@ -106,9 +106,7 @@ Indeed, the results in Table~\ref{tab:StatisticsForTestCorpora} show
 just that for at least one user.  Since one user was able to break the
 ``speed-limit'' with extra practice, we suspect that the years of
 extra practice with the QWERTY mechanism is the primary source of the
-advantage that QWERTY enjoys. \todo{add the results from
-  Table~\ref{tab:StatisticsForTestCorpora} to the plot, and check out
-  the qualitative results from the three users who got high accuracy}.
+advantage that QWERTY enjoys.
 
 The high accuracy rates of the Chording mechanism are therefore quite
 promising.  In the future, we will need to explicitly examine the
@@ -160,7 +158,7 @@ possible. The low average scores (less than 28 for all mechanisms)
 suggested that the task was not pushing the participants to an extent
 that they start noticing it. There were constraints that we had
 specified, but none of them seemed to upset the participants. The fact
-that there was no time limit to the task, was helpful in this respect. The ANOVA with post-hoc tests did not point to any significant differences between any two interfaces in terms of the temporal demand, which corroborates our claims.
+that there was no time limit to the task, was helpful in this respect. The ANOVA with post-hoc tests did not point to any significant differences between any two interfaces in terms of the temporal demand, which makes sense given the controlled settings.
 
 \subsubsection{Performance}
 
@@ -260,8 +258,7 @@ test videos corroborated this claim. Once we reduced the size of the
 keys and magnified the movement of fingers, the users could cover
 larger distances with smaller shifts in position. We also realized
 that users are able to control the finger position with very high
-accuracy, and therefore these optimizations help them enter text at
-higher speeds.
+accuracy because their finger positions were anchored to the side of the device, and therefore these optimizations help them enter text at higher speeds.
 
 \subsubsection{Multiple finger sizes}
 
@@ -273,9 +270,7 @@ trying to form chords at specific locations. For backside-QWERTY, we
 did not make this optimization because users were not trying to
 position multiple fingers at the same time, and also because in that
 case we had tried to optimize between finger movement and key
-sizes. Dynamically determining the trade-off between the two,
-depending on the finger size would have interfered with the optimal
-setting of the system, and influenced other factors.
+sizes.
 
 \subsubsection{Reducing dimensions of movement}
 
@@ -289,25 +284,12 @@ just restricted to the x direction.
 
 \subsubsection{Visual search vs Recall}
 
-After the usability testing, we also realized that users tend to do a
+After the usability testing we also realized that without the tactile feedback of a keyboard, users tend to do a
 visual search to find characters instead of recalling from their
-previous experiences with QWERTY mechanisms. It turned out the the
-layour of keys should be visually intuitive and familiar. As long as
+previous experiences with QWERTY mechanisms. As long as
 the positions of characters follow a pattern, either pre-existing
 (like QWERTY) or familiar (alphabetic), users will be able to accustom
 themselves in a few interactions.
-
-\subsubsection{Pressure vs Touch}
-
-As explained earlier, we also experimented with using pressure as a
-mode of input, but it turned out that it is hard for users to
-accurately control the amount of pressure being applied. This results
-in high error rates because of spurious inputs. A design fix that we
-used to mitigate the situation was to use touch on the front
-screen. Since the two thumbs are anyway used to hold the device, it
-was easy for the users to use them to tap on the front screen. This
-significantly reduced error rates from the test version to the final
-version.
 
 \subsubsection{Touch Cursors}
 
