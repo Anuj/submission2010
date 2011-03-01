@@ -2,16 +2,14 @@
 
 With an estimated 4 billion units in use in December 2008, mobile
 devices have already become the most popular computing device in human
-history. Their portability and communication capabilities have
-revolutionized how people interact with each other. Despite the rapid
-growth of mobile phones, text entry on mobile devices remains a major
-challenge. However, with the recent rise in sales in the
-smartphone/PDA market and the recent launch of serveral tablet
-form-factor devices, users have greater access to medium sized touch
-screens. These screens offer more screen space than a traditional
-phone, and can arguably be more effective in text-input
-tasks. However, due to increased size and weight, these devices
-require specific postures from the users to be able to input text.
+history. Text entry on mobile devices, however, remains a major
+challenge. With the recent rise in sales in the smartphone/PDA market
+and the recent launch of serveral tablet form-factor devices, users
+increasingly use ``medium sized'' touch screens. These screens offer
+more screen space than a traditional phone, and can arguably be more
+effective in text-input tasks. Due to increased size and weight,
+however, these devices require specific postures from the users to be
+able to input text.
 
 Moreover, the tablet form-factor introduces two problems for the user.
 First, since a tablet is very portable, it is an ideal device for use
@@ -29,34 +27,65 @@ device.
 Unlike a mobile phone, however, a larger (e.g. 7+ inches wide)
 keyboard (soft or otherwise) does not work well with two thumbs
 because of the relatively large distance that the thumbs must travel
-to reach the appropriate keys, and the weight of the device compounds
+to reach the appropriate keys.   The weight of the device compounds
 the problem of typing by straining the hands to support the device
 while making precise movements to position the thumbs over the proper
 keys. While standing, many users resort to a different pose, in which
 one arm supports the device while the other hand types with a single
-finger (Figure~\ref{fig:device_hold}). A second difficulty, common to all soft keyboards, arises because the
+finger (Figure~\ref{fig:device_hold}). 
+
+A second difficulty, common to all soft keyboards, arises because the
 fingers do not receive any tactile feedback as to their position on
 the keyboard.  Unlike a physical keyboard in which the keys have
 ridges that delineate their boundaries, a soft keyboard often requires
 the user to look at the keyboard to ensure that they are activating
 the correct keys.  Looking at the keys while typing is distracting,
 requires many eye shifts (since the user must also verify on the
-screen that what they are typing is correct).  This can be alleviated
-to some extent by providing haptic feedback when a key is activated,
-but this provides only limited improvement.
+screen that what they are typing is correct), and requires a higher
+cognitive load than ``touch-typing,'' since the user must visually
+process each key tap.  This can be alleviated to some extent by
+providing haptic feedback when a key is activated, but this provides
+only limited improvement.
 
-Recently, there has been a push in the industry for devices with
-backside input. Notion ink's Adam PC has a backside trackpad
-[1]. Samsung and Toshiba have also been making effort towards
-backside touch input. With the growing interest in backside touch
-input, comes the potential for using the same for entering and
-manipulating information. A "natural" method of holding such a device
-is to have hands on both the sides with fingers wrapped around on the
-back (Figure~\ref{fig:natural}). Moreover, we feel that such devices can be used in various different scenarios. Some of these are outlined here. The user could be stationary and visually focused. This scenario is the best for QWERTY, as the user can optimize his configuration according to the requirements of the interface. Another one could be when the user is mobile but still visually focused. The challenge here is
-that due to occasional loss of focus (for example while commuting) while entering the text, users
-have to orient themselves again after each lapse. Such scenarios would
-require mechanisms that don't necessarily require the user to
-re-orient themselves time and again. Another example scenario is when the user is mobile and intermittently focused. These scenarios require mechanisms that could help the user memorize certain set patterns and configurations, that they could later replicate even without looking at the interface. Chording mechanisms generally fall in this category. We feel that devices with backside touch input have affordances that can support mechanisms that allow users to enter text in various different scenarios.
+At the same time, there has recently been a push in the industry for
+devices with ``backside'' input, in which the device has a touch input
+device or keyboard on the opposite side of the main display. Notion
+Ink's Adam PC has a backside trackpad [1]. Samsung and Toshiba have
+also been making effort towards backside touch input
+\todo{citations}. As manufacturers start to include backside input in their devices, we have an opportunity to take advantage of this new input modality to improve the users speed, accuracy and comfort while entering text on their ``foot-scale'' devices.  A "natural" method of holding such a device is to have
+hands on both the sides with fingers wrapped around on the back
+(Figure~\ref{fig:natural}). 
+
+Users can take advantage of devices with back-side input in a variety
+of different scenarios. When the user is stationary and visually
+focused, they are more flexible in the pose that they use, and a
+traditional QWERTY keyboard may work in this scenario, although the
+complicated visual feedback cycle still has a high congitive load for
+the user, and requires precise gross motor movements, limiting their speed an accuracy. 
+
+Another scenario to consider is when the user is mobile but still
+visually focused, but occasionally losing focus while entering
+text(for example while commuting on a train).  With a QWERTY keyboard,
+users have to orient themselves again after each lapse. Such scenarios
+benefit from mechanisms that don't require the user to re-orient
+themselves when they lose focus.  Scenarios in which the user is only
+intermittently focused, such as when they are walking require
+mechanisms that help the user memorize certain set patterns and
+configurations, that they could later replicate even without looking
+at the interface. 
+
+We have designed a chording-based touch input mechansim specifically
+for devices with a back-side touch input.  This mechanism that shows
+promise in the scenarios described above.  Figure~\ref{fig:natural}
+illustrates that entering text on the back of the device results in a
+more natural, comfortable and stable pose than the commonly adopted
+pose shown in Figure~\ref{fig:device_hold}.  We designed the mechansim
+to use large, relatively inaccurate finger movements as the building
+block for chords.  This allows the user to exploit proprioceptive
+feedback (e.g. feedback from in the nervous system of the hands that
+signals the relative positions of the fingers to one another) to
+increase their speed and accuracy by reducing or eliminating the
+visual feedback required to enter text.
 
 \begin{figure*}
     \includegraphics[scale=0.43]{Figures/natural1.pdf} 
@@ -69,11 +98,15 @@ re-orient themselves time and again. Another example scenario is when the user i
         \label{fig:natural}
 \end{figure*}
 
-Therefore, in this paper we investigate the use of a backside touch input device
-for text input on a mobile device with a medium-sized touch
-screen. Using a hardware prototype with a multitouch input on both the
-back and the front of the device, we explore two new mechanisms: a
-backside QWERTY keyboard, and a chording mechanism.  We study the
-performance of these novel mechanisms with a standard soft QWERTY
-keyboard by examining the quantitative and qualitative results of a
-controlled, 36 user study, plus some auxiliary investigation.
+Preliminary results show that our chording mechansim results in a
+fundamentally faster and more accurate text input mechanism than
+touch-QWERTY on either the front or the back of the display.  In this
+paper we detail our initial quantitative and qualitative investigation
+of this new mechanism.  Using a hardware prototype with a multitouch
+input on both the back and the front of the device, we compare the
+performance of the novel chording mechanism with a standard soft
+QWERTY keyboard on the front or the back of the device in a
+controlled, 36-user study, plus some auxiliary investigation.  Based
+on these results, we recommend further avenues for research and
+modifications to the current mechanism which we believe will results
+in better peformance.
