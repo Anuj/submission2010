@@ -11,38 +11,20 @@ measures that we have proposed earlier in the paper.
     \caption{Keystrokes-per-character (KSPC) and words-per-minute (WPM) for each mechanism, with means noted. The continous curves represent kernel densities of the population across ranges, 1.0-1.6 for KSPC and 0-16 for WPM. The tiny horizontal bars are scatter plots of individual measurements across the same ranges.}
     \label{fig:kspc_and_wpm}
 \end{figure}
-
-KSPC is generally treated as a measure of accuracy, because it
-represents the number of keystrokes executed per character. From our
-experiment, it turned out that all the three mechanisms were similar
+From our experiment, it turned out that all the three mechanisms were similar
 in terms of KSPC measurements as shown in
 Figure~\ref{fig:kspc_and_wpm}.
 
-The Chording mechanism was on an average more accurate than the other two
-mechanisms, with the Backside QWERTY being the lowest in terms of
-average. An ANOVA with post-hoc tests pointed to a  statistically significant difference between backside-QWERTY and Chording. A two tailed t-test to validate this resulted in a p-value of 0.02, which essentially means that the chording mechanism was significantly more accurate than the backside-QWERTY. The rest of the differences were not significant, as suggested by the ANOVA with post-hoc tests. 
+The Chording mechanism was on an average more accurate than the other two mechanisms, with the Backside QWERTY being the least accurate in terms of average. An ANOVA pointed to a statistically significant main effect of the input technique on the KSPC ($F_{2,33}$ = 4.13, p$<$0.025). A two tailed t-test (for chording versus backside QWERTY) to validate this resulted in a p-value of 0.02, which essentially means that the chording mechanism was significantly more accurate than the backside-QWERTY. 
 
 \subsubsection{Words Per Minute (WPM)}
 
-Words Per Minute (WPM) is a measure that is commonly used to represent
-the speed of a text input mechanism. Our experiment findings suggested
-that QWERTY was still the fastest mechanism, followed by backside
-QWERTY and the slowest was chording. Statistics on WPM measurements
-can be found in Figure~~\ref{fig:kspc_and_wpm}. Needless to say that an ANOVA with post-hoc tests suggested significance between all the two-way comparisons. The results suggested
-that QWERTY was faster than both backside QWERTY and chording
-mechanisms. However, it should be noted that the test sessions were
-generally around 20-30 minutes, and each user only interacted with a
-mechanism once. Therefore, the fact that backside QWERTY was on a
-average 3/4th as fast as the QWERTY mechanism was encouraging. This
-led us to explore the results qualitatively and also in terms of speed
-versus accuracy trade-off.
+Our experiment findings suggested that QWERTY was still the fastest mechanism, followed by backside QWERTY and the slowest was chording. Statistics on WPM measurements can be found in Figure~~\ref{fig:kspc_and_wpm}. Needless to say that an ANOVA suggested a main effect of the input technique on the WPM. Pairwise comparisons suggested that QWERTY was faster than both backside QWERTY and chording mechanisms. However, it should be noted that the test sessions were generally around 20-30 minutes, and each user only interacted with a mechanism once. Therefore, the fact that backside QWERTY was on a average 3/4th as fast as the QWERTY mechanism was encouraging. This led us to explore the results qualitatively and also in terms of speed versus accuracy trade-off.
 
 
 \subsubsection{Sample tests}
 
-Since the amount of exposure that the users received during the
-sessions was limited, it was obvious that lack of experience with the
-mechanisms is also hampering the speed and accuracy
+Since the amount of exposure that the users received during the sessions was limited, it was obvious that lack of experience with the mechanisms is also hampering the speed and accuracy
 measurements. Therefore, one of the researchers who was involved in
 development of the interface and had reasonable exposure to the
 interface went through the test in exactly the same fashion as the
@@ -79,7 +61,7 @@ longer studies would have to be conducted.
 \end{figure}
 
 In spite of the discussions above, we should acknowledge that none of
-these measures can be studied totally independently, and there was a
+these measures can be studied independently, and there was a
 possibility that the participants were being more accurate by
 sacrificing on speed. However, since speed with a particular input
 mechanism is often attributed to the amount of exposure and practice,
@@ -89,7 +71,7 @@ fair.
 Examining the speed versus accuracy plot for each mechanism suggests
 that users reach a limit at which they cannot input data any faster,
 despite a sacrifice in accuracy (Figure~\ref{fig:kspc_vs_wpm}).  No
-user could break the 10wpm barrier with the Backside QWERTY mechansim,
+user could break the 10wpm barrier with the Backside QWERTY mechanism,
 despite attempts over a wide range of accuracies.  Similarly for the
 Chording mechanism.
 
@@ -99,7 +81,7 @@ primary design goals for the Chording mechanism: to enable reduce the
 dependency on precise physical positioning for accurate input.
 
 We hypothesize that the ``speed-limit'' that users reach for the two
-novel mechanisms is partly due to the lack of kinestetic memory
+novel mechanisms is partly due to the lack of kinesthetic memory
 (e.g. muscle memory) about how to operate the keyboard.  If this is
 the case, then concerted practice should result in faster performance.
 Indeed, the results in Table~\ref{tab:StatisticsForTestCorpora} show
@@ -114,79 +96,28 @@ impact of training time on speed and accuracy.
 
 \subsection{Qualitative results}
 
-As mentioned earlier, the NASA task load index was used to get
-subjective ratings on qualitative aspects of the interfaces. In the following few paragraphs we summarize the
-high-level trends that were derived from the ratings that the
-participants assigned to the backside QWERTY and chording
-mechanisms. Figure~\ref{fig:tlx-ratings} presents the ratings given by
-the users of all three mechanisms.
+As mentioned earlier, the NASA task load index was used to get subjective ratings on qualitative aspects of the interfaces. In the following few paragraphs we summarize the trends that were derived from the ratings that the participants assigned to the backside QWERTY and chording mechanisms. Figure~\ref{fig:tlx-ratings} presents the ratings given by the users of all three mechanisms.
 
 \subsubsection{Mental Demand}
 
-By just looking at the ratings on the mental demand of the task on the
-NASA-TLX scale, it seemed that the users reported less mental load for
-the backside-QWERTY as compared to the chording mechanism. When we
-conducted a t-test on the ratings, it turned out to have a p-value of
-0.02, which suggests that the difference was significant. It also
-means that the backside-QWERTY has significantly less mental load than
-the chording mechanism. However, the average for backside-QWERTY was
-29.5 and that for chording was 43, which means that on an absolute
-scale participants thought that the two (backside-QWERTY and chording) mechanisms were not mentally
-intensive to work with. The chording mechanism was deemed as harder to
-understand because in that case, the users were trying to work with
-the number of fingers as a method of input. This setup was new for all
-the participants in the study, and this also relates back to the low
-speed (in WPM) of text entry on the chording mechanism. It should also be noted that the average ratings were pretty close to the average for QWERTY, which was 36.25.
+An analysis of the mental demand ratings on the NASA-TLX suggested that the participants in the general did not find any mechanism to be more mentally challenging. A one-way ANOVA did not show any main effect of input type on the mental demand ($F_{2.30}$ = 1.74, p$<$0.19). This is encouraging, because it implies that in spite of the slow speed, the participants did not feel that back-of-device interactions were mentally more demanding.
 
 \subsubsection{Physical Demand}
 
-An analysis of the physical demand ratings on the NASA-TLX suggested
-that the participants in general found the chording mechanism to be the most
-physically challenging. Looking at the kernel
-density plots [Figure 7] of the two (backside-QWERTY and chording) revealed that the distribution of population
-across ratings was very similar in the two interfaces. Therefore, it is reasonably
-fair to say that the two mechanisms were equally easy or equally hard
-to use. However, since the averages of all the sets of ratings were
-around 50 it means that none of the mechanisms were exceptionally hard to use. However, an ANOVA with a post-hoc tests suggested that there was a significant difference between chording and QWERTY, with p-value of 0.02 (from the t-test between the two). Therefore, from a quantitative standpoint the chording mechanism turned out to be the most physically challenging of the three.
+An analysis of the physical demand ratings on the NASA-TLX suggested that the participants in general found the chording mechanism to be the most physically challenging. Looking at the kernel density plots [Figure 7] of the two (backside-QWERTY and chording) revealed that the distribution of population across ratings was very similar in the two interfaces. Therefore, it is reasonably fair to say that the two mechanisms were equally easy or equally hard to use. However, since the averages of all the sets of ratings were around 50 it means that none of the mechanisms were exceptionally hard to use. A one-way ANOVA pointed towards a main effect of input type on the physical demand ($F_{2,30}$ = 3.72, p$<$0.03). However, post-hoc tests (Tukey's HSD, Tukey-Kramer) suggested that there was a significant difference between chording and QWERTY, with p-value of 0.02 (from the t-test between the two). Therefore, from a quantitative standpoint the chording mechanism turned out to be the most physically challenging of the three.
 
 \subsubsection{Temporal Demand}
 
-This metric was important in the sense that we wanted to make sure
-that the participants do not feel rushed during the task. Our aim was
-to reproduce the natural experience of entering text, as far as
-possible. The low average scores (less than 28 for all mechanisms)
-suggested that the task was not pushing the participants to an extent
-that they start noticing it. There were constraints that we had
-specified, but none of them seemed to upset the participants. The fact
-that there was no time limit to the task, was helpful in this respect. The ANOVA with post-hoc tests did not point to any significant differences between any two interfaces in terms of the temporal demand, which makes sense given the controlled settings.
+This metric was important in the sense that we wanted to make sure that the participants do not feel rushed during the task. Our aim was to reproduce the natural experience of entering text, as far as possible. The low average scores (less than 28 for all mechanisms) suggested that the task was not pushing the participants to an extent that they start noticing it. There were constraints that we had specified, but none of them seemed to upset the participants. The fact
+that there was no time limit to the task, was helpful in this respect. A one-way ANOVA did not point to any significant main effect in terms of the temporal demand, which makes sense given the controlled settings.
 
 \subsubsection{Performance}
 
-The NASA-TLX index ratings for performance suggested that all the
-interfaces had good performance. The average performance ratings for
-all the interfaces were below 40 (on 100 point scale). It should be
-noted that a low rating on this scale means good performance. Also from a quantitative angle, ANOVA with post-hoc tests suggested that there was no significant difference between any pair of mechanisms, and they were performing equally well. We also
-observed that there were two users who gave the chording mechanism a
-higher rating, thereby implying that it did not have good
-performance. Both these participants had writing speeds that were lass
-than the average. This suggests that these participants were
-struggling to get accustomed to the device and the mechanism. Their
-speed was suffering as a result of the same. We also looked at the
-videos from those sessions, and they corroborated the same claim. 
+The NASA-TLX index ratings for performance suggested that all the interfaces had good performance. The average performance ratings for all the interfaces were below 40 (on 100 point scale). It should be noted that a low rating on this scale means good performance. Also from a quantitative angle, a one-way ANOVA suggested that there was no significant main effect of the type of input technique on the performance ($F_{2,30}$ = 0.4, p$<$0.67). We also observed that there were two users who gave the chording mechanism a higher rating, thereby implying that it did not have good performance. Both these participants had writing speeds that were less than the average. This suggests that these participants were struggling to get accustomed to the device and the mechanism. Their speed was suffering as a result of the same. We also looked at the videos from those sessions, and they corroborated the same claim. 
 
 \subsubsection{Effort}
 
-The ANOVA with post-hoc tests for these ratings suggested that the difference wasn't significant in the case of any pair. However, studying the kernel density plots (see
-Figure~\ref{fig:tlx-ratings} more carefully suggested that the
-distribution of the opinion on the amount of effort involved in
-working with the backside-QWERTY was bimodal. However, for the
-chording it was almost evenly distributed around the average
-rating. The videos suggested that some of such cases were because the
-backside-QWERTY did not allow for change in size of the keyboard,
-people who had fingers longer or shorter than average finger sizes had
-a harder time with the mechanism as opposed to other. The chording
-mechanism on the other hand, did allow for such changes and therefore
-got an even distribution of ratings.
+A one-way ANOVA suggested that there was no significant main effect of the type of input technique on the effort involved ($F_{2,30}$ = 0.87, p$<$0.43). However, studying the kernel density plots (see Figure~\ref{fig:tlx-ratings} more carefully) suggested that the distribution of the opinion on the amount of effort involved in working with the backside-QWERTY was less evenly distributed. However, for the chording it was almost evenly distributed around the average rating. The videos suggested that some of such cases were because the backside-QWERTY did not allow for change in size of the keyboard, people who had fingers longer or shorter than average finger sizes had a harder time with the mechanism as opposed to other.The chording mechanism on the other hand, did allow for such changes and therefore possibly got an even distribution of ratings.
 
 \begin{figure*}
     \includegraphics[width=\textwidth]{Figures/hash_and_densities_index.pdf} 
@@ -197,46 +128,14 @@ got an even distribution of ratings.
 
 \subsubsection{Frustration}
 
-The ratings suggested that on an average users were satisfied with the
-mechanisms (ANOVA with post-hoc tests did not suggest significance as well). The frustration levels/ratings were restricted to the
-lower half of the scale for chording, however only two users reported
-higher levels of frustration with the backside-QWERTY. When we
-cross-checked this with our video logs, it turned out that both of
-these users had issues with getting accustomed to the mechanisms
-primarily because of finger sizes, as pointed out in the last
-section. This in turn resulted in the observed frustration on the
-NASA-TLX.
+A one-way ANOVA suggested that there was no significant main effect of the type of input technique on the frustration ($F_{2,30}$ = 0.36, p$<$0.7). The ratings suggested that on an average users were satisfied with the mechanisms. The frustration levels/ratings were restricted to the lower half of the scale for chording, however only two users reported higher levels of frustration with the backside-QWERTY. When we cross-checked this with our video logs, it turned out that both of these users had issues with getting accustomed to the mechanisms primarily because of finger sizes, as pointed out in the last section. This in turn resulted in the observed frustration on the NASA-TLX.
 
 \subsubsection{Mean Weighted Scores}
-After the individual analysis of the ratings, we used the standardized
-methods to calculate the effective weighted task load ratings, as
-specified by NASA. Right after filling up the survey, the participants
-were also asked to compare metrics against each other. Since there
-were 6 metrics (Mental, Physical, Temporal, Performance, Effort,
-Frustration), there were $C_{2}^{6}$ possible combinations, and 15
-questions in total. After receiving all the responses from the
-participants, we found that on an average effective weights for Mental
-Demand, Physical Demand, Temporal Demand, Performance, Effort,
-Frustration were 4, 3, 3, 1, 2, 2 respectively. In simple words, a
-higher weight means that particular dimension or metric has larger
-effect towards the load of the task and should be given more weightage
-as opposed to others. Initially we thought that interactions with
-backside-QWERTY and chording mechanisms were intrinsically different
-tasks, and therefore the weights should not be treated as the
-same. However, the average weights that were calculated for the two
-mechanisms turned out to be very close to each other. This is
-understandable from a viewpoint that both the tasks were actually text
-entry tasks with same corpus, and same kind of input
-method. Therefore, the value that the participants were attaching to
-each metric didn't change.
+After the individual analysis of the ratings, we used the standardized methods to calculate the effective weighted task load ratings, as specified by NASA. Right after filling up the survey, the participants were also asked to compare metrics against each other. Since there were 6 metrics (Mental, Physical, Temporal, Performance, Effort, Frustration), there were $C_{2}^{6}$ possible combinations, and 15 questions in total. After receiving all the responses from the
+participants, we found that on an average effective weights for Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, Frustration were 4, 3, 3, 1, 2, 2 respectively. In simple words, a higher weight means that particular dimension or metric has larger effect towards the load of the task and should be given more weightage
+as opposed to others. Initially we thought that interactions with backside-QWERTY and chording mechanisms were intrinsically different tasks, and therefore the weights should not be treated as the same. However, the average weights that were calculated for the two mechanisms turned out to be the same. This is understandable from a viewpoint that both the tasks were actually text entry tasks with same corpus, and same kind of input method. Therefore, the value that the participants were attaching to each metric didn't change. This is also correct in view of previous research on the NASA-TLX \todo{cite TLX paper}.
 
-It is apparent from the discussion above, but to clarify again, a low
-weighted score on the NASA-TLX means that the overall task load was
-low and the experience was pleasant. The backside-QWERTY obtained a
-weighted score of 37 on an average, and the chording mechanism got an
-average score of 41. The average score for QWERTY was 35. The t-test between the two (backside-QWERTY and chording)resulted in a p-value
-value of 0.22, which means that the difference between the two sets of
-effective ratings was not significant. However, an ANOVA with post-hoc tests spotted a significant difference between chording and QWERTY mechanisms. The one tailed t-test produced a p-value of 0.03, thereby suggesting that the chording mechanism overall had a higher task load than the QWERTY mechanism. This can again be spotted in the graph for task load index in Figure 7.
+It is apparent from the discussion above, but to clarify again, a low weighted score on the NASA-TLX means that the overall task load was low and the experience was pleasant. The backside-QWERTY obtained a weighted score of 37 on an average, and the chording mechanism got an average score of 41. The average score for QWERTY was 35. A one-way ANOVA suggested that there was no significant main effect of the type of input technique on the perceived effective workload ($F_{2,30}$ = 0.59, p$<$0.56). This result is very encouraging and exciting as it implies that after the experiment, in spite of the slower speed, the users did not perceive the back-of-device input techniques as harder to perform. 
 
 \subsection{Design guidelines}
 
