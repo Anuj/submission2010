@@ -24,8 +24,7 @@ Our experiment findings suggested that QWERTY was still the fastest mechanism, f
 
 \subsubsection{Sample tests}
 
-Since the amount of exposure that the users received during the sessions was limited, it was obvious that lack of experience with the mechanisms is also hampering the speed and accuracy
-measurements. Therefore, one of the researchers who was involved in
+Since the amount of exposure that the users received during the sessions was limited, it is obvious that lack of experience with the mechanisms also hampers the speed and accuracy measurements. Therefore, one of the researchers who was involved in
 development of the interface and had reasonable exposure to the
 interface went through the test in exactly the same fashion as the
 participants. This was done to test the capability of the two new
@@ -65,20 +64,17 @@ these measures can be studied independently, and there was a
 possibility that the participants were being more accurate by
 sacrificing on speed. However, since speed with a particular input
 mechanism is often attributed to the amount of exposure and practice,
-we had reasons to believe that the comparison of accuracies was still
-fair. 
+we have reasons to believe that the comparison of accuracies is still fair. 
 
 Examining the speed versus accuracy plot for each mechanism suggests
 that users reach a limit at which they cannot input data any faster,
 despite a sacrifice in accuracy (Figure~\ref{fig:kspc_vs_wpm}).  No
 user could break the 10wpm barrier with the Backside QWERTY mechanism,
-despite attempts over a wide range of accuracies.  Similarly for the
-Chording mechanism.
+despite attempts over a wide range of accuracies.  We also had the same observation for the Chording mechanism.
 
 Interestingly, there is a cluster of users who were able to achieve
 very high accuracy with the chording mechanism.  This was one of the
-primary design goals for the Chording mechanism: to enable reduce the
-dependency on precise physical positioning for accurate input.
+primary design goals for the Chording mechanism: to reduce the dependency on precise physical positioning for accurate input.
 
 We hypothesize that the ``speed-limit'' that users reach for the two
 novel mechanisms is partly due to the lack of kinesthetic memory
@@ -108,16 +104,15 @@ An analysis of the physical demand ratings on the NASA-TLX suggested that the pa
 
 \subsubsection{Temporal Demand}
 
-This metric was important in the sense that we wanted to make sure that the participants do not feel rushed during the task. Our aim was to reproduce the natural experience of entering text, as far as possible. The low average scores (less than 28 for all mechanisms) suggested that the task was not pushing the participants to an extent that they start noticing it. There were constraints that we had specified, but none of them seemed to upset the participants. The fact
-that there was no time limit to the task, was helpful in this respect. A one-way ANOVA did not point to any significant main effect in terms of the temporal demand, which makes sense given the controlled settings.
+This metric was important in the sense that we wanted to make sure that the participants did not feel rushed during the task. Our aim was to reproduce the natural experience of entering text, as far as possible. The low average scores (less than 28 for all mechanisms) suggested that the task was not pushing the participants to an extent that they start noticing it. There were constraints that we had specified, but none of them seemed to upset the participants. The fact that there was no time limit to the task, was helpful in this respect. A one-way ANOVA did not point to any significant main effect in terms of the temporal demand, which makes sense given the controlled settings.
 
 \subsubsection{Performance}
 
-The NASA-TLX index ratings for performance suggested that all the interfaces had good performance. The average performance ratings for all the interfaces were below 40 (on 100 point scale). It should be noted that a low rating on this scale means good performance. Also from a quantitative angle, a one-way ANOVA suggested that there was no significant main effect of the type of input technique on the performance ($F_{2,30}$ = 0.4, p$<$0.67). We also observed that there were two users who gave the chording mechanism a higher rating, thereby implying that it did not have good performance. Both these participants had writing speeds that were less than the average. This suggests that these participants were struggling to get accustomed to the device and the mechanism. Their speed was suffering as a result of the same. We also looked at the videos from those sessions, and they corroborated the same claim. 
+The NASA-TLX index ratings for performance suggested that all the interfaces had good performance. The average performance ratings for all the interfaces were below 40 (on 100 point scale). It should be noted that a low rating on this scale means good performance. Also from a quantitative angle, a one-way ANOVA suggested that there was no significant main effect of the type of input technique on the performance ($F_{2,30}$ = 0.4, p$<$0.67). We also observed that there were two users who gave the chording mechanism a higher rating, thereby implying that it did not have good performance. Both these participants had writing speeds that were less than the average. This suggests that these participants were struggling to get accustomed to the device and the mechanism, which might be a possible explanation for the low rating. We also looked at the videos from those sessions, and they corroborated the same claim. 
 
 \subsubsection{Effort}
 
-A one-way ANOVA suggested that there was no significant main effect of the type of input technique on the effort involved ($F_{2,30}$ = 0.87, p$<$0.43). However, studying the kernel density plots (see Figure~\ref{fig:tlx-ratings} more carefully) suggested that the distribution of the opinion on the amount of effort involved in working with the backside-QWERTY was less evenly distributed. However, for the chording it was almost evenly distributed around the average rating. The videos suggested that some of such cases were because the backside-QWERTY did not allow for change in size of the keyboard, people who had fingers longer or shorter than average finger sizes had a harder time with the mechanism as opposed to other.The chording mechanism on the other hand, did allow for such changes and therefore possibly got an even distribution of ratings.
+A one-way ANOVA suggested that there was no significant main effect of the type of input technique on the effort involved ($F_{2,30}$ = 0.87, p$<$0.43). However, studying the kernel density plots (see Figure~\ref{fig:tlx-ratings} more carefully) suggested that the distribution of the opinion on the amount of effort involved in working with the backside-QWERTY was less evenly distributed. However, for the chording it was almost evenly distributed around the average rating. The videos suggested that some of such cases were because the backside-QWERTY did not allow for change in size of the keyboard, people who had fingers longer or shorter than average finger sizes had a harder time with the mechanism as opposed to other. The chording mechanism on the other hand, did allow for such changes and therefore possibly got an even distribution of ratings.
 
 \begin{figure*}
     \includegraphics[width=\textwidth]{Figures/hash_and_densities_index.pdf} 
@@ -146,12 +141,11 @@ During the study we realized that the amount of movement involved in selecting a
 
 \subsubsection{Multiple finger sizes}
 
-There can be a lot of variation in finger sizes, amongst users. We accounted for this in the chording mechanism, by having settings that user could select, if they had fingers larger or shorter than the
-average. This was critical for chording mechanism as the users were trying to form chords at specific locations. For backside-QWERTY, we did not make this optimization because users were not trying to position multiple fingers at the same time, and also because in that case we had tried to optimize between finger movement and key sizes.
+There can be a lot of variation in finger sizes, amongst users. We accounted for this in the chording mechanism, by having settings that the user could select, if they had fingers larger or shorter than the average. This was critical for chording mechanism as the users were trying to form chords at specific locations. For backside-QWERTY, we did not make this optimization because users were not trying to position multiple fingers at the same time, and also because in that case we had tried to optimize between finger movement and key sizes.
 
 \subsubsection{Reducing dimensions of movement}
 
-This one is only true for the chording mechanism, but it turned out from the experiment that a good way to maximize on accuracy is to reduce the number of dimensions of movement. Traditionally, with a soft-QWERTY users tend to position themselves in both, x and y co-ordinate. In the chording mechanism, the y direction was being controlled by the number of fingers, and therefore the movement was just restricted to the x direction.
+This one is only true for the chording mechanism, but it turned out from the experiment that a good way to maximize on accuracy is to reduce the number of dimensions of movement. Traditionally, with a soft-QWERTY users tend to position themselves in both, x and y coordinate. In the chording mechanism, the y direction was being controlled by the number of fingers, and therefore the movement was just restricted to the x direction.
 
 \subsubsection{Visual search vs Recall}
 
