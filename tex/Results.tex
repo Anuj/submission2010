@@ -132,70 +132,32 @@ A one-way ANOVA suggested that there was no significant main effect of the type 
 
 \subsubsection{Mean Weighted Scores}
 After the individual analysis of the ratings, we used the standardized methods to calculate the effective weighted task load ratings, as specified by NASA. Right after filling up the survey, the participants were also asked to compare metrics against each other. Since there were 6 metrics (Mental, Physical, Temporal, Performance, Effort, Frustration), there were $C_{2}^{6}$ possible combinations, and 15 questions in total. After receiving all the responses from the
-participants, we found that on an average effective weights for Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, Frustration were 4, 3, 3, 1, 2, 2 respectively. In simple words, a higher weight means that particular dimension or metric has larger effect towards the load of the task and should be given more weightage
-as opposed to others. Initially we thought that interactions with backside-QWERTY and chording mechanisms were intrinsically different tasks, and therefore the weights should not be treated as the same. However, the average weights that were calculated for the two mechanisms turned out to be the same. This is understandable from a viewpoint that both the tasks were actually text entry tasks with same corpus, and same kind of input method. Therefore, the value that the participants were attaching to each metric didn't change. This is also correct in view of previous research on the NASA-TLX \todo{cite TLX paper}.
+participants, we found that on an average effective weights for Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, Frustration were 4, 3, 3, 1, 2, 2 respectively. In simple words, a higher weight means that particular dimension or metric has larger effect towards the load of the task and should be given more weightage as opposed to others. Initially we thought that interactions with backside-QWERTY and chording mechanisms were intrinsically different tasks, and therefore the weights should not be treated as the same. However, the average weights that were calculated for the two mechanisms turned out to be the same. This is understandable from a viewpoint that both the tasks were actually text entry tasks with same corpus, and same kind of input method. Therefore, the value that the participants were attaching to each metric didn't change. This is also correct in view of previous research on the NASA-TLX \todo{cite TLX paper}.
 
 It is apparent from the discussion above, but to clarify again, a low weighted score on the NASA-TLX means that the overall task load was low and the experience was pleasant. The backside-QWERTY obtained a weighted score of 37 on an average, and the chording mechanism got an average score of 41. The average score for QWERTY was 35. A one-way ANOVA suggested that there was no significant main effect of the type of input technique on the perceived effective workload ($F_{2,30}$ = 0.59, p$<$0.56). This result is very encouraging and exciting as it implies that after the experiment, in spite of the slower speed, the users did not perceive the back-of-device input techniques as harder to perform. 
 
 \subsection{Design guidelines}
 
-After a qualitative and quantitative analysis of our results, we also
-did a high-level analysis of our design choices and cross-checked them
-against the videos. As a result of this, we came up with some major
-design takeaways from this piece of research. Therefore, in this
-section we propose some design guidelines for future efforts that look
-into text input by utilizing a backside touch input device. These
-guidelines are not sufficient, but should definitely be treated as
-necessary.
+After a qualitative and quantitative analysis of our results, we also did a high-level analysis of our design choices and cross-checked them against the videos. As a result of this, we came up with some major design takeaways from this piece of research. Therefore, in this section we propose some design guidelines for future efforts that look into text input by utilizing a backside touch input device. 
 
 \subsubsection{Movement minimization}
 
-During the study we realized that the amount of movement involved in
-selecting a particular character determines the speed that users would
-achieve with the mechanism. The post-experiment analysis of usability
-test videos corroborated this claim. Once we reduced the size of the
-keys and magnified the movement of fingers, the users could cover
-larger distances with smaller shifts in position. We also realized
-that users are able to control the finger position with very high
-accuracy because their finger positions were anchored to the side of the device, and therefore these optimizations help them enter text at higher speeds.
+During the study we realized that the amount of movement involved in selecting a particular character determines the speed that users would achieve with the mechanism. The post-experiment analysis of usability test videos corroborated this claim. Once we reduced the size of the keys and magnified the movement of fingers, the users could cover larger distances with smaller shifts in position. We also realized that users are able to control the finger position with very high accuracy because their finger positions were anchored to the side of the device, and therefore these optimizations help them enter text at higher speeds.
 
 \subsubsection{Multiple finger sizes}
 
-There can be a lot of variation in finger sizes, amongst users. We
-accounted for this in the chording mechanism, by having settings that
-user could select, if they had fingers larger or shorter than the
-average. This was critical for chording mechanism as the users were
-trying to form chords at specific locations. For backside-QWERTY, we
-did not make this optimization because users were not trying to
-position multiple fingers at the same time, and also because in that
-case we had tried to optimize between finger movement and key
-sizes.
+There can be a lot of variation in finger sizes, amongst users. We accounted for this in the chording mechanism, by having settings that user could select, if they had fingers larger or shorter than the
+average. This was critical for chording mechanism as the users were trying to form chords at specific locations. For backside-QWERTY, we did not make this optimization because users were not trying to position multiple fingers at the same time, and also because in that case we had tried to optimize between finger movement and key sizes.
 
 \subsubsection{Reducing dimensions of movement}
 
-This one is only true for the chording mechanism, but it turned out
-from the experiment that a good way to maximize on accuracy is to
-reduce the number of dimensions of movement. Traditionally, with a
-soft-QWERTY users tend to position themselves in both, x and y
-co-ordinate. In the chording mechanism, the y direction was being
-controlled by the number of fingers, and therefore the movement was
-just restricted to the x direction.
+This one is only true for the chording mechanism, but it turned out from the experiment that a good way to maximize on accuracy is to reduce the number of dimensions of movement. Traditionally, with a soft-QWERTY users tend to position themselves in both, x and y co-ordinate. In the chording mechanism, the y direction was being controlled by the number of fingers, and therefore the movement was just restricted to the x direction.
 
 \subsubsection{Visual search vs Recall}
 
-After the usability testing we also realized that without the tactile feedback of a keyboard, users tend to do a
-visual search to find characters instead of recalling from their
-previous experiences with QWERTY mechanisms. As long as
-the positions of characters follow a pattern, either pre-existing
-(like QWERTY) or familiar (alphabetic), users will be able to accustom
-themselves in a few interactions.
+After the usability testing we also realized that without the tactile feedback of a keyboard, users tend to do a visual search to find characters instead of recalling from their previous experiences with QWERTY mechanisms. As long as the positions of characters follow a pattern, either pre-existing
+(like QWERTY) or familiar (alphabetic), users will be able to accustom themselves in a few interactions.
 
 \subsubsection{Touch Cursors}
 
-Both our mechanisms involved showing finger positions on the screen,
-and we had to this in a way that we don't hide any information or
-don't cause a loss of perception. We achieved this by doing a number
-of things. We made the touch cursors transluscent, so that we don't
-occlude any information. We also kept the size of the cursor smaller
-than the size of an individual key so that they are easier to position
-and don't end up selecting multiple keys at the same time.
+Both our mechanisms involved showing finger positions on the screen and we had to this in a way that we don't hide any information or don't cause a loss of perception. We achieved this by doing a number of things. We made the touch cursors transluscent, so that we don't occlude any information. We also kept the size of the cursor smaller than the size of an individual key so that they are easier to position and don't end up selecting multiple keys at the same time.
