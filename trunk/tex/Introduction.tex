@@ -47,15 +47,20 @@ devices with "backside" input, in which the device has a touch input
 device or keyboard on the opposite side of the main display. Notion
 Ink's Adam PC has a backside trackpad [1]. Samsung and Toshiba have
 also been making effort towards backside touch input
-\todo{citations}. As manufacturers start to include backside input in their devices, we have an opportunity to take advantage of this new input modality to improve the users speed, accuracy and comfort while entering text on their tablet form-factor devices.  A "natural" method of holding such a device is to have hands on both the sides with fingers wrapped around on the back.
-(Figure~\ref{fig:natural})
+
+\todo{citations}. As manufacturers start to include backside input in
+their devices, we have an opportunity to take advantage of this new
+input modality to improve the users speed, accuracy and comfort while
+entering text on their "foot-scale" devices.  A "natural" method of
+holding such a device is to have hands on both the sides with fingers
+wrapped around on the back (Figure~\ref{fig:natural}).
 
 Users can take advantage of devices with back-of-device input in a variety
 of different scenarios. When the user is stationary and visually
 focused, they are more flexible in the pose that they use, and a
 traditional QWERTY keyboard may work in this scenario, although the
 complicated visual feedback cycle still has a high cognitive load for
-the user, and requires precise gross motor movements, limiting their speed an accuracy. 
+the user, and requires precise gross motor movements, limiting their speed and accuracy. 
 
 Another scenario to consider is when the user is mobile but still
 visually focused, but occasionally losing focus while entering
@@ -68,7 +73,19 @@ mechanisms that help the user memorize certain set patterns and
 configurations of fingers, that they could later replicate even without looking
 at the interface. 
 
-In this paper we present text-input mechanisms that can be tested on devices with back-of-device touch input. The goal is to provide mechanisms that could allow users to enter text on devices with larger screens and back-of-device touch input in a way that eliminates the problems of occlusion of screen space inherent to touch and pen input, and uses the established effectiveness of vertical movements on back-of-device touch input \todo{cite Wobbrock} by giving freedom of movement to multiple fingers. We acknowledge the fact that there have been efforts in the recent past \todo{cite Reartype and LucidTouch} that try do the same, but we want to investigate the solutions to the problem of text-entry in the absence of additional hardware like hover sensing (LucidTouch) and discrete physical keys (RearType). We understand that our implementation can be viewed as sub-optimal in the view of these recent contributions, but we wanted to experiment with mechanisms that are implementable on existing devices with back-of-device touch input without adding extra hardware.
+
+In this paper we present a novel text-input mechanism that could be
+tested on devices with back-of-device touch input, and examine QWERTY
+layouts on both the front and back of the device for comparison. The
+goal is to provide mechanisms that could allow users to enter text on
+devices with larger screens and back-of-device touch input in a way
+that eliminates the problems of occlusion of screen space inherent to
+touch and pen input, and uses the established effectiveness of
+vertical movements on back-of-device touch input \todo{cite Wobbrock}
+by giving freedom of movement to multiple fingers.  Our work stands in
+contrast to other recent work which requires additional hardware, such
+as hover sensing \note{cite LucidTouch} or discreet physical keys
+\cite{RearType}.
 
 We have designed a chording-based touch input mechanism specifically for devices with a back-of-device touch input.  This mechanism shows promise in the scenarios described above.  Figure~\ref{fig:natural} illustrates that entering text on the back of the device results in a more natural, comfortable and stable pose than the commonly adopted pose shown in Figure~\ref{fig:device_hold}.  We designed the mechanism to use large, relatively inaccurate finger movements as the building
 block for chords.  This allows the user to exploit proprioceptive feedback (e.g. the feedback from in the nervous system of the hands that signals the relative positions of the fingers to one another) to
@@ -85,4 +102,20 @@ increase their speed and accuracy by reducing or eliminating the visual feedback
         \label{fig:natural}
 \end{figure*}
 
-In this paper we detail our initial quantitative and qualitative investigation of this new mechanism. However, just like in the case of other exploratory works \todo{cite RearType} our focus for this phase of experimentation was to determine if users find such input mechanisms usable or frustrating. There can also be additional concerns with use of back-of-device touch input, like minimized grip stability. In view of such issues it was necessary to investigate the user perception around back-of-device text-input. To capture that we use the NASA Task Load Index (TLX) and present an analysis of the reported user experience. Using a hardware prototype with a multitouch input on both the back and the front of the device, we compare the performance of the novel chording mechanism and a backside QWERTY with a standard soft QWERTY keyboard on the front or the back of the device in a controlled, 36-user study.  Based on these results, we recommend further avenues for research and modifications to the current mechanism which we believe will result in better performance.
+
+In this paper we detail our initial quantitative and qualitative
+investigation of this new mechanism.  Our focus for this phase of
+experimentation was to determine if users find such input mechanisms
+usable or frustrating, identify additional mechanical concerns, and
+discover refinements of the proposed mechanism.  Using a hardware
+prototype with a multitouch input on both the back and the front of
+the device, we compare the performance of the novel chording mechanism
+and a backside QWERTY with a standard soft QWERTY keyboard on the
+front or the back of the device in a controlled, 36-user study.  We
+also investigated the users' qualitative perception of back-of-device
+text-input. In addition to unstructured interviews and feedback, we
+use the NASA Task Load Index (TLX) in an attempt to quantify user
+perception of the mechanisms we tested. Based on these results, we
+recommend further avenues for research and modifications to the
+current mechanism which we believe will results in better performance.
+

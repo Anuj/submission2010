@@ -15,7 +15,7 @@
    viewBox="0 0 563.75601 447.53599"
    version="1.1"
    id="svg1"
-   inkscape:version="0.47+devel r9447"
+   inkscape:version="0.48+devel r9917"
    sodipodi:docname="kspc_vs_wpm.svg">
   <metadata
      id="metadata3494">
@@ -25,12 +25,40 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs3492" />
+     id="defs3492">
+    <clipPath
+       id="pc9fe3f6e3fee1d5ac75eb829e2c6a505-7">
+      <rect
+         id="rect2971-9"
+         height="355.67999"
+         width="456.16501"
+         y="44.459999"
+         x="73.574997" />
+    </clipPath>
+    <clipPath
+       id="pc9fe3f6e3fee1d5ac75eb829e2c6a505-7-2">
+      <rect
+         id="rect2971-9-6"
+         height="355.67999"
+         width="456.16501"
+         y="44.459999"
+         x="73.574997" />
+    </clipPath>
+    <clipPath
+       id="pc9fe3f6e3fee1d5ac75eb829e2c6a505-0">
+      <rect
+         id="rect2971-1"
+         height="355.67999"
+         width="456.16501"
+         y="44.459999"
+         x="73.574997" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -40,17 +68,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1178"
+     inkscape:window-width="1200"
+     inkscape:window-height="1898"
      id="namedview3490"
      showgrid="false"
      inkscape:zoom="1.3199327"
-     inkscape:cx="234.57683"
-     inkscape:cy="305.75678"
+     inkscape:cx="356.64246"
+     inkscape:cy="123.92933"
      inkscape:window-x="1440"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg1"
+     inkscape:current-layer="axes1"
      fit-margin-top="3"
      units="pt"
      fit-margin-left="3"
@@ -1592,6 +1620,72 @@
          d="m 73.575,400.14 0,-355.68"
          style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:round" />
     </g>
+    <g
+       transform="translate(-90.23433,-80.907613)"
+       id="RegularPolyCollection3-3"
+       style="fill:#b3b3b3;fill-opacity:1;stroke:#b3b3b3;stroke-opacity:1">
+      <defs
+         id="defs3134-8">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 0,-7.136496 -6.180387,10.704744 12.360774,0 L 0,-7.136496"
+           id="coll4_0_30f5ad08897fa00cac5b84259a708201-0" />
+      </defs>
+      <g
+         id="g3137-2"
+         clip-path="url(#pc9fe3f6e3fee1d5ac75eb829e2c6a505-7)"
+         style="fill:#b3b3b3;fill-opacity:1;stroke:#b3b3b3;stroke-opacity:1">
+        <use
+           height="444"
+           width="588"
+           id="use3139-4"
+           y="309.86768"
+           x="272.26019"
+           xlink:href="#coll4_0_30f5ad08897fa00cac5b84259a708201-0"
+           style="fill:#b3b3b3;stroke:#b3b3b3;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;fill-opacity:1;stroke-opacity:1" />
+      </g>
+    </g>
+    <g
+       transform="translate(-119.5923,-67.179581)"
+       id="AsteriskPolygonCollection2-9"
+       style="fill:#b3b3b3;stroke:#b3b3b3;stroke-opacity:1">
+      <defs
+         id="defs3126-5">
+        <path
+           inkscape:connector-curvature="0"
+           d="M 0,-7.136496 0,0 -6.787211,-2.205299 0,0 -4.194727,5.773547 0,0 4.194727,5.773547 0,0 6.787211,-2.205299 0,0 0,-7.136496"
+           id="coll3_0_edca7a26195a022f494611139570944f-7" />
+      </defs>
+      <g
+         id="g3129-6"
+         clip-path="url(#pc9fe3f6e3fee1d5ac75eb829e2c6a505-0)"
+         style="fill:#b3b3b3;stroke:#b3b3b3;stroke-opacity:1">
+        <use
+           height="444"
+           width="588"
+           id="use3131-8"
+           y="208.99535"
+           x="330.10446"
+           xlink:href="#coll3_0_edca7a26195a022f494611139570944f-7"
+           style="fill:#b3b3b3;stroke:#b3b3b3;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+           transform="translate(0,-36.8)" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:14.40000057px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0;word-spacing:0;writing-mode:lr-tb;text-anchor:middle;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="157.81766"
+       y="74.295982"
+       id="text3812-4-6-5-4-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3814-9-6-6-9-3"
+         x="157.81766"
+         y="74.295982">Researcher 1</tspan><tspan
+         sodipodi:role="line"
+         x="157.81766"
+         y="92.295982"
+         id="tspan4250-4">Backside Qwerty</tspan></text>
   </g>
   <rect
      style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -1854,4 +1948,19 @@
        id="tspan3814-77"
        x="200.2235"
        y="440.87506">Keystrokes-per-character</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:14.40000057px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0;word-spacing:0;writing-mode:lr-tb;text-anchor:middle;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+     x="149.01047"
+     y="183.28683"
+     id="text3812-4-6-5-4"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3814-9-6-6-9"
+       x="149.01047"
+       y="183.28683">Researcher 1</tspan><tspan
+       sodipodi:role="line"
+       x="149.01047"
+       y="201.28683"
+       id="tspan4250">Chording</tspan></text>
 </svg>
