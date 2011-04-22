@@ -7,44 +7,26 @@ We will discuss our quantitative results in terms of the three measures that we 
 
 \begin{figure}
     \includegraphics[width=0.5\textwidth]{Figures/kspc_and_wpm.pdf} 
-    \caption{Keystrokes-per-character (KSPC) and words-per-minute (WPM) for each mechanism, with means noted. The continous curves represent kernel densities of the population across ranges, 1.0-1.6 for KSPC and 0-16 for WPM. The tiny horizontal bars are scatter plots of individual measurements across the same ranges.}
+    \caption{Keystrokes-per-character (KSPC) and words-per-minute (WPM) for each mechanism, with means noted. The continuous curves represent kernel densities of the population across ranges, 1.0-1.6 for KSPC and 0-16 for WPM. The tiny horizontal bars are scatter plots of individual measurements across the same ranges.}
     \label{fig:kspc_and_wpm}
 \end{figure}
-From our experiment, it turned out that all the three mechanisms were similar
-in terms of KSPC measurements as shown in
-Figure~\ref{fig:kspc_and_wpm}.
-
-The Chording mechanism was on an average more accurate than the other two mechanisms, with the Backside QWERTY being the least accurate in terms of average. An ANOVA pointed to a statistically significant main effect of the input technique on the KSPC ($F_{2,33}$ = 4.13, p$<$0.025). A two tailed t-test (for chording versus backside QWERTY) to validate this resulted in a p-value of 0.02, which essentially means that the chording mechanism was significantly more accurate than the backside-QWERTY. 
+The Chording mechanism was on an average more accurate than the other two mechanisms, with the Backside QWERTY being the least accurate. An ANOVA pointed to a statistically significant main effect of the input technique on the KSPC ($F_{2,33}$ = 4.13, p$<$0.025). A two tailed t-test (for chording versus backside QWERTY) to validate this resulted in a p-value of 0.02, which essentially means that the chording mechanism was significantly more accurate than the backside-QWERTY. (Figure~\ref{fig:kspc_and_wpm}). 
 
 \subsubsection{Words Per Minute (WPM)}
 
 Our experiment findings suggested that QWERTY was still the fastest
 mechanism, followed by backside QWERTY and the slowest was
 chording. Statistics on WPM measurements can be found in
-Figure~\ref{fig:kspc_and_wpm}. Needless to say that an ANOVA
-suggested a main effect of the input technique on the WPM. Pairwise
-comparisons suggested that QWERTY was faster than both backside QWERTY
-and chording mechanisms. However, it should be noted that the test
-sessions were generally around 20-30 minutes, and each user only
-interacted with a mechanism once. Therefore, the fact that backside
+Figure~\ref{fig:kspc_and_wpm}. An ANOVA suggested a main effect of the input technique on the WPM. Pairwise comparisons suggested that QWERTY was faster than both backside QWERTY
+and chording mechanisms. However, the test sessions were generally around 20-30 minutes, and each user only interacted with a mechanism once. Therefore, the fact that backside
 QWERTY was on a average 3/4th as fast as the QWERTY mechanism was
 encouraging. This led us to explore the results qualitatively and also
 in terms of speed versus accuracy trade-off.
 
 
-\subsubsection{Sample tests}
+\subsubsection{Expert results}
 
-Since the amount of exposure that the users received during the
-sessions was limited, it is obvious that lack of experience with the
-mechanisms also hampers the speed and accuracy
-measurements. Therefore, one of the researchers who was involved in
-development of the interface and had reasonable exposure to the
-interface went through the test in exactly the same fashion as the
-participants. This was done to test the capability of the two new
-mechanisms in terms of speed and
-accuracy. Table~\ref{tab:StatisticsForTestCorpora} shows the
-measurements from the same.  The results are also shown in
-Figure~\ref{fig:kspc_and_wpm} for comparison.
+Since the amount of exposure that the users received during the sessions was limited, it is obvious that lack of experience with the mechanisms also hampers the speed and accuracy measurements. Therefore, one of the researchers who was involved in development of the interface and had reasonable exposure to the interface went through the test in exactly the same fashion as the participants. This was done to test the capability of the two new mechanisms in terms of speed and accuracy. Table~\ref{tab:StatisticsForTestCorpora} shows the measurements from the same.  The results are also shown in Figure~\ref{fig:kspc_vs_wpm} for comparison.
 
 \begin{table}
 	\centering
@@ -59,10 +41,8 @@ Figure~\ref{fig:kspc_and_wpm} for comparison.
 
 We can see from the table and figure that with decent amount of
 exposure to the interface, both the accuracy and the speed seem to
-improve, suggesting that there are strong learning effects which must
-be considered.  These measurements, however, are restricted to an
-individual and are highly preliminary. To fully establish our claims,
-larger and longer studies would have to be conducted.
+improve, suggesting that there are strong learning trends which must
+be considered. This concurs with claims made by previous text-input research on learning trends. \cite{LetterWise} 
 
 \subsubsection{Speed versus Accuracy Trade-off}
 
@@ -74,47 +54,17 @@ larger and longer studies would have to be conducted.
     \label{fig:kspc_vs_wpm}
 \end{figure}
 
-In spite of the discussions above, we should acknowledge that none of
-these measures can be studied independently, and there was a
-possibility that the participants were being more accurate by
-sacrificing on speed. However, since speed with a particular input
-mechanism is often attributed to the amount of exposure and practice,
-we have reasons to believe that the comparison of accuracies is still fair. 
+Examining the speed versus accuracy plot for each mechanism suggests that users reach a limit at which they cannot input data any faster, despite a sacrifice in accuracy (Figure~\ref{fig:kspc_vs_wpm}).  No user could break the 10wpm barrier with the Backside QWERTY mechanism, despite attempts over a wide range of accuracies.  We also had the same observation for the Chording mechanism.
 
-Examining the speed versus accuracy plot for each mechanism suggests
-that users reach a limit at which they cannot input data any faster,
-despite a sacrifice in accuracy (Figure~\ref{fig:kspc_vs_wpm}).  No
-user could break the 10wpm barrier with the Backside QWERTY mechanism,
-despite attempts over a wide range of accuracies.  We also had the same observation for the Chording mechanism.
+Interestingly, there is a cluster of users who were able to achieve very high accuracy with the chording mechanism.  This was one of the primary design goals for the Chording mechanism: to reduce the dependency on precise physical positioning for accurate input.
 
-Interestingly, there is a cluster of users who were able to achieve
-very high accuracy with the chording mechanism.  This was one of the
-primary design goals for the Chording mechanism: to reduce the dependency on precise physical positioning for accurate input.
+We hypothesize that the ``speed-limit'' that users reach for the two novel mechanisms is partly due to the lack of kinesthetic memory (e.g. muscle memory) operating the keyboard, and unfamiliarity with the novel chording mechanism.  If this is the case, then concerted practice should result in faster performance.  Indeed, the results in Table~\ref{tab:StatisticsForTestCorpora} and Figure~\ref{fig:kspc_vs_wpm} show just that for at least one user. Since one user was able to break the ``speed-limit'' with extra practice, we suspect that the years of extra practice with the QWERTY mechanism is the primary source of the advantage that QWERTY enjoys.
 
-We hypothesize that the ``speed-limit'' that users reach for the two
-novel mechanisms is partly due to the lack of kinesthetic memory
-(e.g. muscle memory) operating the keyboard, and unfamiliarity with
-the novel chording mechansim.  If this is the case, then concerted
-practice should result in faster performance.  Indeed, the results in
-Table~\ref{tab:StatisticsForTestCorpora} and
-Figure~\ref{fig:kspc_vs_wpm} show just that for at least one user.
-Since one user was able to break the ``speed-limit'' with extra
-practice, we suspect that the years of extra practice with the QWERTY
-mechanism is the primary source of the advantage that QWERTY enjoys.
+The high accuracy rates of the Chording mechanism are therefore quite promising.  In the future, we will need to explicitly examine the impact of training time on speed and accuracy, and explore methods for accelerating users' acclimation to the unfamiliar input mechanism.
 
-The high accuracy rates of the Chording mechanism are therefore quite
-promising.  In the future, we will need to explicitly examine the
-impact of training time on speed and accuracy, and explore methods for
-accelerating users' acclimation to the unfamiliar input mechansim.
+\subsubsection{NASA-TLX ratings}
 
-\subsection{Qualitative results}
-
-As mentioned earlier, we used the NASA task load index to get
-subjective ratings on qualitative aspects of the interfaces. In the
-following few paragraphs we summarize the trends that were derived
-from the ratings that the participants assigned to the backside QWERTY
-and chording mechanisms. Figure~\ref{fig:tlx-ratings} presents the
-ratings given by the users of all three mechanisms.
+As mentioned earlier, we used the NASA task load index to get subjective ratings on qualitative aspects of the interfaces. In the following few paragraphs we summarize the trends that were derived from the ratings that the participants assigned to the backside QWERTY and chording mechanisms. Figure~\ref{fig:tlx-ratings} presents the ratings given by the users of all three mechanisms.
 
 \subsubsection{Mental Demand}
 
