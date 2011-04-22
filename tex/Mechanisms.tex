@@ -15,14 +15,11 @@ with the back-of-device QWERTY mechanism.
 
 \begin{figure}
     \includegraphics[scale=0.45]{Figures/backside.pdf} 
-    \caption{Screenshot of back-of-device QWERTY with user's fingers on the
-      back-of-device screen}
+    \caption{Screenshot of back-of-device QWERTY with user's fingers on the back-of-device screen. The user in this case has just placed four of the possible eight fingers on the back.}
 \end{figure}
 
 \subsubsection{Design evolution}
-
-As mentioned above, we chose to copy the QWERTY layout, rather than
-exploring alternative key layouts in order to help us destinguish
+As mentioned above, we chose to copy the QWERTY layout, rather than exploring alternative key layouts in order to help us destinguish
 between effects due to using back-of-device input and effecs due to
 layout or mechanism changes.  Since the layout remains familiar,
 changes to performance or accuracy are probably attributable to some
@@ -48,7 +45,7 @@ In the first version we had also modified the keyboard layout to match the finge
     \label{fig:chording_explanation}
 \end{figure*} 
 
-To use the chording mechanism the user extends and contracts their fingers (e.g. move their fingers in the horizontal axis in the natural pose). The user's hand can select three regions, determined exclusively by the distance from the edge of the screen. The movements of the user's left hand select a character class: upper-case, lower-case or symbols. Within these classes, the number of fingers touching the region determines one of three subgroups in the class, with nine characters in each subgroup. The nine characters are broken up into three groups, and the users are supposed to use their right hand to select a character. In summary, the users select a class, a subgroup within a class and a character within the subgroup through each particular configuration of fingers on the back (Figure~\ref{fig:chording_explanation}). It should also be noted that in any given class the user can place one finger to select the lower subgroup, two fingers to select the middle subgroup and three to select the top one.
+To use the chording mechanism the user extends and contracts their fingers (e.g. move their fingers in the horizontal axis in the natural pose). The user's fingers can select three regions, determined exclusively by the distance from the edge of the screen. The movements of the fingers of user's left hand select a character class: upper-case, lower-case or symbols. Within these classes, the number of fingers touching the region determines one of three subgroups in the class, with nine characters in each subgroup. The nine characters are broken up into three groups, and the users are supposed to use their right hand to select a character. In summary, the users select a class, a subgroup within a class and a character within the subgroup through each particular configuration of fingers on the back (Figure~\ref{fig:chording_explanation}). It should also be noted that in any given class the user can place one finger to select the lower subgroup, two fingers to select the middle subgroup and three to select the top one.
 
 For example, in Figure~\ref{fig:chording_example} the user places two fingers of the left hand in the middle region to select the class of lower-case letters and the subgroup of "jklmnopqr". The user then places three fingers of the right hand in the rightmost region to select the letter "l".
 
@@ -71,4 +68,4 @@ Initial testing suggested that the finger sizes and areas in which users can mov
 
 \subsection{QWERTY}
 
-This is a standard soft QWERTY keyboard, with no special modifications. The keyboard supports multitouch, which means the users can select the next character to be entered without releasing the currently selected one. The keys turns blue on click, so that the user gets appropriate feedback. The top quarter of the screen is a scrollable textfield, which displays the text that is being entered.
+Our third mechanism is a standard soft QWERTY keyboard, with no special modifications. The keyboard supports multitouch, which means the users can select the next character to be entered without releasing the currently selected one. The keys turns blue on click, so that the user gets appropriate feedback. The top quarter of the screen is a scrollable textfield, which displays the text that is being entered.
