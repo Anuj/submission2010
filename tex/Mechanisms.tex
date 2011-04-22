@@ -1,19 +1,35 @@
 \section{Mechanisms}
 
-As mentioned earlier, we have implemented two backside touch input based mechanisms and a standard soft-QWERTY keyboard. 
+As mentioned earlier, we have implemented two back-of-device touch input based mechanisms and a standard soft-QWERTY keyboard. 
 
-\subsection{Backside QWERTY}
-This mechanism uses the standard QWERTY layout, but with a few modifications. In this mechanism, the user places his fingers on the backside screen and it results in a cursor appearing on the front screen at a location that is vertically above the touch point. This way user can move multiple cursors at the same time, using multiple fingers. To input a particular character, the user must select a particular key with the cursor and then touch the front screen anywhere to signal input. Figure 3 shows a user selecting a character on the backside-QWERTY mechanism.
+\subsection{Back-of-device QWERTY}
+
+This mechanism uses the standard QWERTY layout, but with a few
+modifications. In this mechanism, the user places his fingers on the
+back-of-device screen and it results in a cursor appearing on the front
+screen at a location that is vertically above the touch point. This
+way user can move multiple cursors at the same time, using multiple
+fingers. To input a particular character, the user must select a
+particular key with the cursor and then touch the front screen
+anywhere to signal input. Figure 3 shows a user selecting a character
+on the back-of-device QWERTY mechanism.
 
 \begin{figure}
     \includegraphics[scale=0.45]{Figures/backside.pdf} 
-    \caption{Screenshot of backside-QWERTY with user's fingers on the
-      backside screen}
+    \caption{Screenshot of back-of-device QWERTY with user's fingers on the
+      back-of-device screen}
 \end{figure}
 
 \subsubsection{Design evolution}
 
-The interface went through two iterations before getting its final shape. The first version used pressure as a method to signal input. When the user increased the pressure on the backside input, a character would be registered.  Unfortunately, pressure input on the Stantum panels appears to be measured by measuring the size of the contact point, rather than actually measuring pressure.  As such, the pressure measurements are inaccurate and difficult to calibrate, especially for the pinky finger. Also, initial tests suggested that being able to control the amount of pressure being applied is hard for users. Since the users were already applying some pressure to drag the cursors around, it turned out to be confusing for them.
+As mentioned above, we chose to copy the QWERTY layout, rather than
+exploring alternative key layouts in order to help us destinguish
+between effects due to using back-of-device input and effecs due to
+layout or mechanism changes.  Since the layout remains familiar,
+changes to performance or accuracy are probably attributable to some
+aspect of back-of-device text entry.
+
+The interface went through two iterations before getting its final shape. The first version used pressure as a method to signal input. When the user increased the pressure on the back-of-device input, a character would be registered.  Unfortunately, pressure input on the Stantum panels appears to be measured by measuring the size of the contact point, rather than actually measuring pressure.  As such, the pressure measurements are inaccurate and difficult to calibrate, especially for the pinky finger. Also, initial tests suggested that being able to control the amount of pressure being applied is hard for users. Since the users were already applying some pressure to drag the cursors around, it turned out to be confusing for them.
 
 Therefore, the second version of the interface accepted a character as input if the user released their finger over that character (also called a "lift-off" at times). However, in this case the chances of giving accidental inputs, by accidentally removing a finger increase manifold. 
 
@@ -36,7 +52,7 @@ For example, in Figure~\ref{fig:chording_example} the user places two fingers of
 
 In our implementation, the number of fingers activating a region is indicated by color changes to the activated regions, in addition to the translucent circles representing the location of the fingers. The user can use these circles to position their fingers in the correct locations. They then touch (using their thumb) anywhere on the front screen to indicate a character input (motivation same as above). Wobbrock et al. \cite{Wobbrock} also talk about the need to minimize vertical movements in back-of-device interactions, which is precisely what our chording mechanism reflects. When the user is learning how to use the chording mechanism, they can enter a character using the step-by-step process described above.  As they become more familiar, however, then can enter chords by touching the device with both hands, in the correct location, simultaneously.
 
-Similar to backside QWERTY and QWERTY, the top quarter of the screen was a scrollable textfield, which displayed the text that was being entered.
+Similar to back-of-device QWERTY and QWERTY, the top quarter of the screen was a scrollable textfield, which displayed the text that was being entered.
 
 The chording mechanism was designed to allow the user to exploit their proprioception (the sense of the relative positions of one's body) rather than tactile feedback, in order to form and exploit kinesthetic memory (short-feedback memory in the nervous system that bypasses cognitive processing for repetitive tasks, often called ``muscle-memory''). Since gross motor movements provide better proprioception, the mechanism was designed to reduce requirements for precise movement.
 
@@ -44,12 +60,12 @@ The chording mechanism was designed to allow the user to exploit their proprioce
 \begin{figure}
     \includegraphics[scale=0.45]{Figures/chording.pdf} 
     \caption{Screenshot of chording mechanism with user's fingers on
-      the backside screen trying to form a chord.}
+      the back-of-device screen trying to form a chord.}
        \label{fig:chording_example}
 \end{figure} 
 \subsubsection{Design Evolution}
 
-Initial testing suggested that the finger sizes and areas in which users can move comfortably vary a lot. Therefore, in the final version the users were allowed to select from large/medium/small setting, that determined the width of the zones. Users, who had smaller reach, could use these settings to optimize the area of movement. The rest of the design changes pertained to the device itself (like pressure), and therefore the fixes were the same as backside-QWERTY.
+Initial testing suggested that the finger sizes and areas in which users can move comfortably vary a lot. Therefore, in the final version the users were allowed to select from large/medium/small setting, that determined the width of the zones. Users, who had smaller reach, could use these settings to optimize the area of movement. The rest of the design changes pertained to the device itself (like pressure), and therefore the fixes were the same as back-of-device QWERTY.
 
 \subsection{QWERTY}
 

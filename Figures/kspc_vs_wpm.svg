@@ -78,7 +78,7 @@
      inkscape:window-x="1440"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="axes1"
+     inkscape:current-layer="svg1"
      fit-margin-top="3"
      units="pt"
      fit-margin-left="3"
@@ -1621,7 +1621,7 @@
          style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:round" />
     </g>
     <g
-       transform="translate(-90.23433,-80.907613)"
+       transform="matrix(0.729,0,0,0.729,-16.451818,2.5830297)"
        id="RegularPolyCollection3-3"
        style="fill:#b3b3b3;fill-opacity:1;stroke:#b3b3b3;stroke-opacity:1">
       <defs
@@ -1642,13 +1642,13 @@
            y="309.86768"
            x="272.26019"
            xlink:href="#coll4_0_30f5ad08897fa00cac5b84259a708201-0"
-           style="fill:#b3b3b3;stroke:#b3b3b3;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;fill-opacity:1;stroke-opacity:1" />
+           style="fill:#b3b3b3;fill-opacity:1;stroke:#b3b3b3;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
       </g>
     </g>
     <g
-       transform="translate(-119.5923,-67.179581)"
+       transform="matrix(0.729,0,0,0.729,-30.133991,-20.699322)"
        id="AsteriskPolygonCollection2-9"
-       style="fill:#b3b3b3;stroke:#b3b3b3;stroke-opacity:1">
+       style="fill:#4d4d4d;stroke:#606060;stroke-opacity:1">
       <defs
          id="defs3126-5">
         <path
@@ -1659,7 +1659,7 @@
       <g
          id="g3129-6"
          clip-path="url(#pc9fe3f6e3fee1d5ac75eb829e2c6a505-0)"
-         style="fill:#b3b3b3;stroke:#b3b3b3;stroke-opacity:1">
+         style="fill:#4d4d4d;stroke:#606060;stroke-opacity:1">
         <use
            height="444"
            width="588"
@@ -1667,26 +1667,33 @@
            y="208.99535"
            x="330.10446"
            xlink:href="#coll3_0_edca7a26195a022f494611139570944f-7"
-           style="fill:#b3b3b3;stroke:#b3b3b3;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+           style="fill:#4d4d4d;stroke:#606060;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
            transform="translate(0,-36.8)" />
       </g>
     </g>
     <text
        xml:space="preserve"
        style="font-size:14.40000057px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0;word-spacing:0;writing-mode:lr-tb;text-anchor:middle;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="157.81766"
-       y="74.295982"
+       x="166.90903"
+       y="77.326439"
        id="text3812-4-6-5-4-1"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3814-9-6-6-9-3"
-         x="157.81766"
-         y="74.295982">Researcher 1</tspan><tspan
+         x="166.90903"
+         y="77.326439">Researcher 1</tspan><tspan
          sodipodi:role="line"
-         x="157.81766"
-         y="92.295982"
-         id="tspan4250-4">Backside Qwerty</tspan></text>
+         x="166.90903"
+         y="95.326439"
+         id="tspan4250-4">Back-QWERTY</tspan></text>
   </g>
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2.03155732;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     id="rect5903-0"
+     width="34.515667"
+     height="380.5939"
+     x="61.564587"
+     y="4.0157785" />
   <rect
      style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="rect5903"
@@ -1709,13 +1716,6 @@
      height="356.08008"
      x="498.52133"
      y="25.061049" />
-  <rect
-     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2.03155732;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-     id="rect5903-0"
-     width="34.515667"
-     height="380.5939"
-     x="61.564587"
-     y="4.0157785" />
   <text
      xml:space="preserve"
      style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0;word-spacing:0;writing-mode:lr-tb;text-anchor:start;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
@@ -1902,7 +1902,7 @@
        sodipodi:role="line"
        id="tspan3814-9-6"
        x="341.76938"
-       y="206.44225">Backside QWERTY</tspan></text>
+       y="206.44225">Back-QWERTY</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0;word-spacing:0;writing-mode:lr-tb;text-anchor:start;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
@@ -1951,16 +1951,16 @@
   <text
      xml:space="preserve"
      style="font-size:14.40000057px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0;word-spacing:0;writing-mode:lr-tb;text-anchor:middle;fill:#999999;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-     x="149.01047"
-     y="183.28683"
+     x="168.4054"
+     y="182.07465"
      id="text3812-4-6-5-4"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3814-9-6-6-9"
-       x="149.01047"
-       y="183.28683">Researcher 1</tspan><tspan
+       x="168.4054"
+       y="182.07465">Researcher 1</tspan><tspan
        sodipodi:role="line"
-       x="149.01047"
-       y="201.28683"
+       x="168.4054"
+       y="200.07465"
        id="tspan4250">Chording</tspan></text>
 </svg>

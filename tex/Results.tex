@@ -33,7 +33,7 @@ Since the amount of exposure that the users received during the sessions was lim
 		\begin{tabular}{rcc} 
 		                         & \color{grey}{WPM}    & \color{grey}{KSPC} \\ 
                    \color{grey}{Chording} & 7.69   & 1.12 \\ 
-                   \color{grey}{Backside QWERTY} & 13.231 & 1.152 \\ 
+                   \color{grey}{Back-of-device QWERTY} & 13.231 & 1.152 \\ 
 		\end{tabular}
 	\caption{Sample Measurements}
 	\label{tab:StatisticsForTestCorpora}
@@ -114,11 +114,23 @@ There can be a lot of variation in finger sizes, amongst users. We accounted for
 
 \subsubsection{Reducing dimensions of movement}
 
-This one is only true for the chording mechanism, but it turned out from the experiment that a good way to maximize on accuracy is to reduce the number of dimensions of movement. Traditionally, with a soft-QWERTY users tend to position themselves in both, x and y coordinate. In the chording mechanism, the y direction was being controlled by the number of fingers, and therefore the movement was just restricted to the x direction.
+This guideline only applies to the chording mechanism.
+Experimentation revelaed that a good way to maximize on accuracy is to
+reduce the number of dimensions of movement. Traditionally, with a
+soft-QWERTY users need to position their finger in both hoizontal and
+vertical directions. With the chording mechanism, horizontal movement
+is replaced by the number of fingers touching the screen, and
+therefore movement is restricted to the horizontal direction.
 
 \subsubsection{Visual search vs Recall}
 
-After the usability testing we also realized that without the tactile feedback of a keyboard, users tend to do a visual search to find characters instead of recalling from their previous experiences with QWERTY mechanisms. As long as the positions of characters follow a pattern, either pre-existing (like QWERTY) or familiar (alphabetic), users will be able to accustom themselves in a few interactions.
+After the usability testing we also realized that without the tactile
+feedback of a keyboard, users tend to do a visual search to find
+characters instead of recalling from their previous experiences with
+QWERTY mechanisms. As long as the positions of characters follow a
+pattern, either pre-existing (like QWERTY) or familiar (alphabetic),
+users will be able to accustom themselves in a few interactions.
 
 \subsubsection{Touch Cursors}
+
 Our initial tests suggested that even though users use just one cursor at a given point of time to select a character, they still like to see the position of the rest of their fingers. This is because having a sense of the configuration of all the fingers, helps the users in relative positioning. Moreover, both our mechanisms involved showing finger positions on the screen and we had to this in a way that we don't hide any information or don't cause a loss of perception. We achieved this by doing a number of things. We made the touch cursors translucent, so that we don't occlude any information. We also kept the size of the cursor smaller than the size of an individual key so that they are easier to position and don't end up selecting multiple keys at the same time. 
