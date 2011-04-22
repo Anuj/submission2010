@@ -1,11 +1,69 @@
 \section{Related Work}
 
-Some recent efforts have investigated alternate methods of text inputs. Some of them like BlindType \cite{BlindType} (also \cite{Brewster}) try to let the user type without doing visual search, and by doing ambiguity resolution and error correction. Some other efforts like SWYPE, SHARK investigate approaches more disconnected from traditional keypads \cite{Zhai},\cite{Swype}. SWYPE is a mechanism that allows users to draw spellings on the keypad, instead of pressing individual keys. However, all of these are for devices that are small scale and are meant for front-side touch input.  As such, they do not address the issue of user pose.
+Some recent efforts have investigated alternate methods of text
+inputs. Some of them like BlindType \cite{BlindType} (also
+\cite{Brewster}) try to let the user type without doing visual search,
+and by doing ambiguity resolution and error correction. Some other
+efforts like SWYPE, SHARK investigate approaches more disconnected
+from traditional keypads \cite{Zhai},\cite{Swype}. SWYPE is a
+mechanism that allows users to draw spellings on the keypad, instead
+of pressing individual keys. However, all of these are for devices
+that are small scale and are meant for front-side touch input.  As
+such, they do not address the issue of user pose.  Also, similar
+mechanisms could easily be applied to our techniques, and thus are
+complimentary to our work.
 
-The Grippity keyboard \cite{Grippity} allows users to type on the back, using a QWERTY layout. The interface is see through, so that the users can naturally know the key that they are trying to press. However, Grippity is supposed to be a peripheral device and act as a wireless keyboard. This need not necessarily be of value in the scenarios we mentioned above. The RearType keyboard goes a step further, in providing a familiar layout of physical keys on the back of a device for text entry. This leads to less occlusion and clutter on the paired front screen. The results for RearType also look promising \cite{RearType}. However, in spite of all the advantages that it offers, RearType requires additional hardware in terms of physical keys on the back of the device. Moreover, it uses the space on the back of the device to just enable text-input, whereas devices that have back-of-device touch input, use it for multiple scenarios, as in the case of LucidTouch \cite{LucidTouch}. LucidTouch uses touch+hover sensing to determine finger positions at the back of the device. This is then used to create the experience of semi-transparency to gain greater accuracy in terms of approaching targets. Both LucidTouch and RearType require additional hardware, and are not designed to work for devices with back-of-device touch input. Therefore, a systematic understanding of the space of text-input using back-of-device touch input is still required.
+The Grippity keyboard \cite{Grippity} allows users to type on the
+back, using a QWERTY layout. The interface is see through, so that the
+users can naturally know the key that they are trying to
+press. However, Grippity is supposed to be a peripheral device and act
+as a wireless keyboard, making it less relevant for mobile use. The
+RearType keyboard goes a step further, in providing a familiar layout
+of physical keys on the back of a device for text entry. This leads to
+less occlusion and clutter on the paired front screen
+\cite{RearType}. On the other hand, RearType requires additional
+hardware (e.g. physical keys on the back of the device). Moreover, it
+uses the space on the back of the device soley for text-input, whereas
+devices that have back-of-device touch input, such as LucidTouch
+\cite{LucidTouch} can use the back of the device for other input
+tasks. LucidTouch uses touch+hover sensing to determine finger
+positions at the back of the device. This is then used to create the
+experience of semi-transparency to gain greater accuracy in terms of
+approaching targets. Both LucidTouch and RearType require additional
+hardware, do not work with devices with back-of-device
+touch input. 
 
-In the space of chording mechanisms, wearable computing users often use one-handed chording keyboards, such as the Ekatetra \cite{Ekatetra} or the Twiddler \cite{Twiddler}, as their text input mechanism. One handed chording keyboards are almost as old as computers themselves, with Doug Englebart demonstrating one in 1968 after many years of work \cite{Englebart}. Chording can be used to free up a hand for, e.g. supporting a device.  Unfortunately, this requires a secondary device for the user, if a standard chording keyboard is to be used.  Peripherals are problematic because they get lost or are often stuffed away deeply in a bag, making them inconvenient for spontaneous use. However, there is prior work that suggests that chording mechanisms hold potential, sometimes even more than traditional keyboards \cite{Conrad}. There is also work on optimal mappings of chords to characters \cite{Gopher}, which can act as inspiration for future experimentation. Overall, we could not find instances of research that investigates the use of a chording mechanism in back-of-device text-input techniques. 
+Wearable computing users often use one-handed chording keyboards, such
+as the Ekatetra \cite{Ekatetra} or the Twiddler \cite{Twiddler}, as
+their text input mechanism.  One handed chording keyboards are almost
+as old as computers themselves, with Doug Englebart demonstrating one
+in 1968 after many years of work \cite{Englebart}. Chording can be
+used to free up a hand for, e.g. supporting a device.  Unfortunately,
+this requires a secondary device for the user, if a standard chording
+keyboard is to be used.  Peripherals are problematic because they get
+lost or are often stuffed away deeply in a bag, making them
+inconvenient for spontaneous use.  However, not withstanding the
+entrenched popularity of QWERTY keyboards, Conrad and Longman showed
+early on that they can potentially out-perform QWERTY
+keyboards\cite{Conrad}. Work on optimal mappings of chords to
+characters \cite{Gopher} offer further avenues for refinement of our
+work. Overall, we could not find instances of research that
+investigates the use of a chording mechanism in back-of-device
+text-input techniques.
 
-The reason we believe chording mechanisms hold potential is because with training, chording keyboards in conjunction with phonetic encoding of words can be used to dramatically improve the speed of text entry.  Stenotype keyboards, used by court transcriptionists and closed captioners, allow for transcription speeds in excess of 300 words per minute (WPM) for some (well trained) users.  For reference, one study found that average users type at 33 WPM for transcription and 19 WPM for composition \cite{Karat}. 
+With training, chording keyboards in conjunction with phonetic
+encoding of words can be used to dramatically improve the speed of
+text entry.  Stenotype keyboards, used by court transcriptionists and
+closed captioners, allow for transcription speeds in excess of 300
+words per minute (WPM) for some (well trained) users.  For reference,
+one study found that average users type at 33 WPM for transcription
+and 19 WPM for composition \cite{Karat}.
 
-In addition to above, researchers have also explored use of multitouch screens for text input. Shin et al \cite{Shin} implemented a multi-point touch input mechanism and compared it against a single point touch. Moreover, Schmidt et al \cite{Schmidt} have investigated multitouch text input on tabletop displays. Others like Mackenzie have tried to analyze the effectiveness of various different mechanisms and layouts on soft keyboards \cite{Mac}. However, none of these systems have tried to investigate the use of multitouch for back-of-device text-input.
+Researchers have also explored the use of multitouch screens for text
+input. Shin et al \cite{Shin} implemented a multi-point touch input
+mechanism and compared it against a single point touch. Moreover,
+Schmidt et al \cite{Schmidt} have investigated multitouch text input
+on tabletop displays. Others like Mackenzie have tried to analyze the
+effectiveness of various different mechanisms and layouts on soft
+keyboards \cite{Mac}. However, none of these systems have tried to
+investigate the use of multitouch for back-of-device text-input.
