@@ -5,14 +5,13 @@ As mentioned earlier, we have implemented two back-of-device touch input based m
 \subsection{Back-of-device QWERTY}
 
 This mechanism uses the standard QWERTY layout, but with a few
-modifications. In this mechanism, the user places his fingers on the
-back-of-device screen and it results in a cursor appearing on the front
-screen at a location that is vertically above the touch point. This
-way user can move multiple cursors at the same time, using multiple
-fingers. To input a particular character, the user must select a
-particular key with the cursor and then touch the front screen
+modifications. The user places their fingers on the back of the device
+and a cursor appears on the front screen, above the touch point.  The
+user can move multiple cursors at the same time, using multiple
+fingers. To input a particular character, the user selects a
+character with the cursor and then touch the front screen
 anywhere to signal input. Figure 3 shows a user selecting a character
-on the back-of-device QWERTY mechanism.
+with the back-of-device QWERTY mechanism.
 
 \begin{figure}
     \includegraphics[scale=0.45]{Figures/backside.pdf} 
@@ -29,11 +28,14 @@ layout or mechanism changes.  Since the layout remains familiar,
 changes to performance or accuracy are probably attributable to some
 aspect of back-of-device text entry.
 
-The interface went through two iterations before getting its final shape. The first version used pressure as a method to signal input. When the user increased the pressure on the back-of-device input, a character would be registered.  Unfortunately, pressure input on the Stantum panels appears to be measured by measuring the size of the contact point, rather than actually measuring pressure.  As such, the pressure measurements are inaccurate and difficult to calibrate, especially for the pinky finger. Also, initial tests suggested that being able to control the amount of pressure being applied is hard for users. Since the users were already applying some pressure to drag the cursors around, it turned out to be confusing for them.
-
-Therefore, the second version of the interface accepted a character as input if the user released their finger over that character (also called a "lift-off" at times). However, in this case the chances of giving accidental inputs, by accidentally removing a finger increase manifold. 
-
-As a result we finally shifted to touching (using the thumb) the front panel once the character has been selected, as the method to signal input. This was deliberately done in view of previous research on back-of-device touch input, that advocates the use of thumb-on-front as a complement to fingers on the back techniques. \cite{Wobbrock} 
+The interface went through two iterations before getting its final
+shape.  We tried recognizing character input events using pressure
+sensing (e.g. squeezes) and touch releases (e.g taking the finger off
+of a character), but found that a tap with the thumb on the front of
+the screen was easiest.  Pressure input was difficult to control, and
+recognizing releases resulted in lots of errors.  Previous research on
+back-of-device touch input also suggests using the thumb-on-front as a
+complement to fingers on the back techniques. \cite{Wobbrock}
 
 In the first version we had also modified the keyboard layout to match the finger to key mappings on a QWERTY keyboard, as done by previous research \cite{RearType},\cite{LucidTouch}. However, after the initial test, we realized that users were still doing visual search for keys instead of using their pre-existing motor knowledge of QWERTY. Therefore, a standard QWERTY layout in this case turned out to be more predictable and usable. In hindsight, this is not surprising because previous research \cite{Wobbrock} argued that if finger movement is to be displayed to the user, a "visual-correct" mapping should be used; otherwise a "motor-correct" one may be used. The research on LucidTouch, also indicated that the users were split in terms of their preference for the layout (QWERTY versus inverted-QWERTY). After initial testing, the size of the Space, Backspace and Enter keys was increased to make them easier to select.
 
