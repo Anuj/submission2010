@@ -64,44 +64,41 @@ The high accuracy rates of the Chording mechanism are therefore quite promising.
 
 \subsubsection{NASA-TLX ratings}
 
-As mentioned earlier, we used the NASA task load index to get subjective ratings on qualitative aspects of the interfaces. In the following few paragraphs we summarize the trends that were derived from the ratings that the participants assigned to the backside QWERTY and chording mechanisms. Figure~\ref{fig:tlx-ratings} presents the ratings given by the users of all three mechanisms.
+As mentioned earlier, we used the NASA task load index to get subjective ratings on qualitative aspects of the interfaces. In the following few paragraphs we summarize the trends that were derived from the ratings that the participants assigned to the text-input mechanisms. Figure~\ref{fig:tlx-ratings} presents the ratings given by the users of all three mechanisms. It should be noted that the ratings range from 0-100 for each of the 6 dimensions (Mental demand, Physical demand, Temporal demand, Performance, Effort, Frustration). We ran one-way ANOVA tests on each of the 6 dimensions separately and combined (average of the 6). None of these tests resulted in a significant main effect of the input mechanism on the dimension under question (Table~\ref{tab:anova}). To summarize, a one-way ANOVA suggested that there was no significant main effect of the type of input technique on the perceived effective (average) workload ($F_{2,30}$ = 0.59, p$<$0.56). This result is encouraging and exciting as it implies that after the experiment, in spite of the slower speed, the users did not perceive the back-of-device input techniques as harder to perform. The result can also be qualitatively observed by the similarity in ratings exhibited in Figure~\ref{fig:tlx-ratings}.
 
-\subsubsection{Mental Demand}
+\begin{table}
+	\centering
+		\begin{tabular}{rcc} 
+		                         & \color{grey}{$F_{2,30}$}    & \color{grey}{p-value ($<$)} \\ 
+                   \color{grey}{Mental Demand} & 1.74   & 0.19 \\ 
+                   \color{grey}{Physical demand} &  0.65 & 0.52 \\ 
+                   \color{grey}{Temporal demand} & 0.8 & 0.35 \\ 
+                   \color{grey}{Performance} & 0.4 & 0.67 \\ 
+                   \color{grey}{Effort} & 0.87 & 0.43 \\ 
+                   \color{grey}{Frustration} & 0.36 & 0.7 \\ 
+		\end{tabular}
+	\caption{Table of ANOVA results}
+	\label{tab:anova}
+\end{table}
 
-An analysis of the mental demand ratings on the NASA-TLX suggested that the participants in the general did not find any mechanism to be more mentally challenging. A one-way ANOVA did not show any main effect of input type on the mental demand ($F_{2.30}$ = 1.74, p$<$0.19). This is encouraging, because it implies that in spite of the slow speed, the participants did not feel that back-of-device interactions were mentally more demanding.
 
-\subsubsection{Physical Demand}
+We also analyzed the recorded videos to explain some of the exceptions found in the NASA-TLX ratings. We observed that there were two users who gave the chording mechanism a rating implying that it did not have good performance. Both these participants had writing speeds that were less than the average. This suggests that these participants were struggling to get accustomed to the device and the mechanism, which might be a possible explanation for the low rating. We also looked at the videos from those sessions, and they corroborated the same claim. Moreover, the opinion on the amount of effort involved in working with the backside-QWERTY was less evenly distributed. However, for the chording it was almost evenly distributed around the average rating. The videos suggested that some of such cases were because the backside-QWERTY did not allow for change in size of the keyboard, people who had fingers longer or shorter than average finger sizes had a harder time with the mechanism as opposed to other. The chording mechanism on the other hand, did allow for such changes and therefore possibly got an even distribution of ratings.
 
-An analysis of the physical demand ratings on the NASA-TLX suggested that the participants in general found the chording mechanism to be the most physically challenging. Looking at the kernel density plots [Figure 7] of the two (backside-QWERTY and chording) revealed that the distribution of population across ratings was very similar in the two interfaces. Therefore, it is reasonably fair to say that the two mechanisms were equally easy or equally hard to use. However, since the averages of all the sets of ratings were around 50 it means that none of the mechanisms were exceptionally hard to use. A one-way ANOVA pointed towards a main effect of input type on the physical demand ($F_{2,30}$ = 3.72, p$<$0.03). However, post-hoc tests (Tukey's HSD, Tukey-Kramer) suggested that there was a significant difference between chording and QWERTY, with p-value of 0.02 (from the t-test between the two). Therefore, from a quantitative standpoint the chording mechanism turned out to be the most physically challenging of the three.
+\subsection{Qualitative results}
+As mentioned earlier, we conducted post-session interviews to get some qualitative feedback. Apart from feedback on the mechanisms, in these interviews we tried to find users' opinion on the problems of occlusion and posture mentioned earlier.
+\subsubsection{Backside QWERTY}
+In the post-session interviews 8 out of 12 participants said that they felt that they were more comfortable in holding the device, in contrast to their experiences with a tablet form-factor device.
+Only 3 out of 12 participants said that they felt their grip stability was being minimized when they reached out for a character. Moreover, 2 out of these 3 participants suggested having physical "strap-on" holders for fingers on the side to solve this problem. All the participants said that the mechanism solved the problem of occlusion, as all of the activity was happening at the back of the device. Moreover, 10 out of these 12 participants said this was a welcome change, the rest said they were indifferent.
+\subsubsection{Chording mechanism}
+In the post-session interviews 11 out of 12 participants said that they felt they were more comfortable in holding the device. None of the participants said that their grip stability was effected. In fact all the participants said that they felt that the mechanism was slow, but involved less movement and greater accuracy. As in the case of backside QWERTY all the participants said that the mechanism solved the problem of occlusion. Moreover, 8 out of 12 participants said the mechanism could be a welcome change, 3 of them said it might be too much work, and 1 of them was indifferent.
 
-\subsubsection{Temporal Demand}
-
-This metric was important in the sense that we wanted to make sure that the participants did not feel rushed during the task. Our aim was to reproduce the natural experience of entering text, as far as possible. The low average scores (less than 28 for all mechanisms) suggested that the task was not pushing the participants to an extent that they start noticing it. There were constraints that we had specified, but none of them seemed to upset the participants. The fact that there was no time limit to the task, was helpful in this respect. A one-way ANOVA did not point to any significant main effect in terms of the temporal demand, which makes sense given the controlled settings.
-
-\subsubsection{Performance}
-
-The NASA-TLX index ratings for performance suggested that all the interfaces had good performance. The average performance ratings for all the interfaces were below 40 (on 100 point scale). It should be noted that a low rating on this scale means good performance. Also from a quantitative angle, a one-way ANOVA suggested that there was no significant main effect of the type of input technique on the performance ($F_{2,30}$ = 0.4, p$<$0.67). We also observed that there were two users who gave the chording mechanism a higher rating, thereby implying that it did not have good performance. Both these participants had writing speeds that were less than the average. This suggests that these participants were struggling to get accustomed to the device and the mechanism, which might be a possible explanation for the low rating. We also looked at the videos from those sessions, and they corroborated the same claim. 
-
-\subsubsection{Effort}
-
-A one-way ANOVA suggested that there was no significant main effect of the type of input technique on the effort involved ($F_{2,30}$ = 0.87, p$<$0.43). However, studying the kernel density plots (see Figure~\ref{fig:tlx-ratings} more carefully) suggested that the distribution of the opinion on the amount of effort involved in working with the backside-QWERTY was less evenly distributed. However, for the chording it was almost evenly distributed around the average rating. The videos suggested that some of such cases were because the backside-QWERTY did not allow for change in size of the keyboard, people who had fingers longer or shorter than average finger sizes had a harder time with the mechanism as opposed to other. The chording mechanism on the other hand, did allow for such changes and therefore possibly got an even distribution of ratings.
+In spite of being self-reported, these qualitative observations strongly point towards the possibility that the two new mechanisms were able to solve the two major problems with text-input on devices with tablet form factor. Moreover, the fact that there was no perceived workload difference reported on the NASA-TLX and the results from WPM, KSPC measurements, these qualitative results look even more promising.
 
 \begin{figure*}
     \includegraphics[width=\textwidth]{Figures/hash_and_densities_index.pdf} 
     \caption{NASA-TLX rating for all three input mechanisms}
     \label{fig:tlx-ratings}
 \end{figure*}
-
-
-\subsubsection{Frustration}
-
-A one-way ANOVA suggested that there was no significant main effect of the type of input technique on the frustration ($F_{2,30}$ = 0.36, p$<$0.7). The ratings suggested that on an average users were satisfied with the mechanisms. The frustration levels/ratings were restricted to the lower half of the scale for chording, however only two users reported higher levels of frustration with the backside-QWERTY. When we cross-checked this with our video logs, it turned out that both of these users had issues with getting accustomed to the mechanisms primarily because of finger sizes, as pointed out in the last section. This in turn resulted in the observed frustration on the NASA-TLX.
-
-\subsubsection{Mean Weighted Scores}
-After the individual analysis of the ratings, we used the standardized methods to calculate the effective weighted task load ratings, as specified by NASA. Right after filling up the survey, the participants were also asked to compare metrics against each other. Since there were 6 metrics (Mental, Physical, Temporal, Performance, Effort, Frustration), there were $C_{2}^{6}$ possible combinations, and 15 questions in total. After receiving all the responses from the
-participants, we found that on an average effective weights for Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, Frustration were 4, 3, 3, 1, 2, 2 respectively. In simple words, a higher weight means that particular dimension or metric has larger effect towards the load of the task and should be given more weightage as opposed to others. Initially we thought that interactions with backside-QWERTY and chording mechanisms were intrinsically different tasks, and therefore the weights should not be treated as the same. However, the average weights that were calculated for the two mechanisms turned out to be the same. This is understandable from a viewpoint that both the tasks were actually text entry tasks with same corpus, and same kind of input method. Therefore, the value that the participants were attaching to each metric didn't change. This is also correct in view of previous research on the NASA-TLX \cite{HartS}.
-
-It is apparent from the discussion above, but to clarify again, a low weighted score on the NASA-TLX means that the overall task load was low and the experience was pleasant. The backside-QWERTY obtained a weighted score of 37 on an average, and the chording mechanism got an average score of 41. The average score for QWERTY was 35. A one-way ANOVA suggested that there was no significant main effect of the type of input technique on the perceived effective workload ($F_{2,30}$ = 0.59, p$<$0.56). This result is very encouraging and exciting as it implies that after the experiment, in spite of the slower speed, the users did not perceive the back-of-device input techniques as harder to perform. 
 
 \subsection{Design guidelines}
 
@@ -121,9 +118,7 @@ This one is only true for the chording mechanism, but it turned out from the exp
 
 \subsubsection{Visual search vs Recall}
 
-After the usability testing we also realized that without the tactile feedback of a keyboard, users tend to do a visual search to find characters instead of recalling from their previous experiences with QWERTY mechanisms. As long as the positions of characters follow a pattern, either pre-existing
-(like QWERTY) or familiar (alphabetic), users will be able to accustom themselves in a few interactions.
+After the usability testing we also realized that without the tactile feedback of a keyboard, users tend to do a visual search to find characters instead of recalling from their previous experiences with QWERTY mechanisms. As long as the positions of characters follow a pattern, either pre-existing (like QWERTY) or familiar (alphabetic), users will be able to accustom themselves in a few interactions.
 
 \subsubsection{Touch Cursors}
-
-Both our mechanisms involved showing finger positions on the screen and we had to this in a way that we don't hide any information or don't cause a loss of perception. We achieved this by doing a number of things. We made the touch cursors transluscent, so that we don't occlude any information. We also kept the size of the cursor smaller than the size of an individual key so that they are easier to position and don't end up selecting multiple keys at the same time.
+Our initial tests suggested that even though users use just one cursor at a given point of time to select a character, they still like to see the position of the rest of their fingers. This is because having a sense of the configuration of all the fingers, helps the users in relative positioning. Moreover, both our mechanisms involved showing finger positions on the screen and we had to this in a way that we don't hide any information or don't cause a loss of perception. We achieved this by doing a number of things. We made the touch cursors translucent, so that we don't occlude any information. We also kept the size of the cursor smaller than the size of an individual key so that they are easier to position and don't end up selecting multiple keys at the same time. 
